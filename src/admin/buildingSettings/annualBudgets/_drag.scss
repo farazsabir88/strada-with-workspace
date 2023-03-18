@@ -1,0 +1,50 @@
+.preview-container-budget {
+    height: 150px;
+    border: 1.4px dashed #2f3030ad;
+    width: 52%;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 3.2rem;
+    border-radius: 5px;
+    color: rgba(33, 33, 33, 0.6);
+
+    .text-decor {
+        color: #00cfa1;
+        cursor: pointer;
+    }
+}
+
+.thumbs-container {
+    display: flex;
+    border: 1.4px solid rgba(0, 0, 0, .15);
+    margin-top: 12px;
+    width: 100%;
+    border-radius: 4px;
+    
+}
+
+.thumb {
+    display: inline-flex;
+    border-radius: 4px;
+    width: 60px;
+    height: 56px;
+    padding: 6px;
+    padding-left: 11px;
+}
+
+.thumb-inner {
+    display: flex;
+    min-width: 0;
+    overflow: hidden,
+}
+
+.img-style {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+.thumb-icon {
+    color: #7A7A7A;
+    margin-right: 0.6rem;
+}

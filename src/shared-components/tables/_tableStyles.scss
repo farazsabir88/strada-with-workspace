@@ -1,0 +1,48 @@
+@import 'assests/sass/variables';
+
+.ct-header-cell {
+    font-weight: $font-weight-5 !important;
+    color: #12161B !important;
+    line-height: $_font-size-14 !important;
+    font-family: $font-secondary !important;
+
+    .header-content {
+        display: flex;
+        align-items: center;
+
+        .sort-icon {
+            display: none;
+        }
+    }
+
+    &:hover .header-content {
+        color: #66788A !important;
+
+        .sort-icon {
+            display: block;
+        }
+    }
+}
+
+.ct-body-cell {
+    font-family: $font-primary !important;
+    font-size: $_font-size-14 !important;
+    line-height: $_line-spacing-20 !important;
+    letter-spacing: 0.25px !important;
+    color: $color-text-title !important;
+    height: 50px !important;
+    padding: 0 !important;
+    padding-left: 14px !important;
+}
+
+.ct-table-body-row {
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-hover-gray;
+
+        .contact-icons i {
+            display: block;
+        }
+    }
+}

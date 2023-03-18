@@ -1,0 +1,128 @@
+@import 'assests/sass/variables';
+
+.checklist-wrapper {
+    width: 100%;
+    margin: $margin-24;
+    margin-top: 87px;
+
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: $margin-8;
+
+        .header-text {
+            font-family: 'Roboto-medium';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            letter-spacing: .18px;
+            color: rgba(33, 33, 33, .87);
+        }
+
+        .right-side {
+            display: flex;
+            align-items: center;
+
+            .button-wrapper {
+                width: 115px;
+                height: 36px;
+                border-radius: 12px;
+            }
+
+            .search-wrapper {
+                width: 239px;
+                height: 36px;
+                margin-right: 25px;
+            }
+        }
+    }
+
+    .filter-wrapper {
+        border-top: 1px solid #E4E4E4;
+        padding-top: 25px;
+        margin-top: 15px;
+    }
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.checklist-list-popover {
+    width: 180px !important;
+    margin-right: 2.8rem;
+
+    .chart-btn {
+        letter-spacing: 0.00938em;
+        padding: 12px 16px;
+        font-size: 14px !important;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: $font-primary;
+        cursor: pointer;
+
+        .edit-delete-text {
+            margin-left: .7rem;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(33, 33, 33, 0.87);
+        }
+
+        .edit-delete-icon {
+            color: rgba(33, 33, 33, 0.6);
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+    }
+}
+
+.empty-array-wrapper {
+    margin: auto;
+    margin-top: 16rem;
+    width: auto;
+
+    p {
+        font-family: 'Roboto-medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.15px;
+        color: #212121;
+        margin-bottom: 14px;
+    }
+
+    .create-new-button {
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+.create-template-title {
+    font-family: 'Roboto-medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(33, 33, 33, 0.87);
+
+    @media screen and (max-width: 285px) {
+        font-size: 10px;
+    }
+}
+
+.create-template-div {
+    margin-top: 20px;
+}

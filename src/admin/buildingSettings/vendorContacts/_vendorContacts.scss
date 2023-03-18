@@ -1,0 +1,109 @@
+@import 'assests/sass/variables';
+
+.vendor-contacts-wrapper {
+    width: 100%;
+    margin: $margin-24;
+    margin-top: 82px;
+
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: $margin-8;
+
+        h6 {
+            font-family: 'Roboto-Medium';
+            font-size: 24px;
+            line-height: 36px;
+            color: rgba(33, 33, 33, 0.87);
+            letter-spacing: 0.5px;
+            font-weight: 550;
+        }
+
+        .button-wrapper {
+            width: 118px;
+            height: 36px;
+        }
+    }
+}
+
+.gl-diloag-title {
+    font-size: 1.25rem;
+    font-family: $font-secondary;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+}
+
+.contact-icons {
+    display: flex;
+    align-items: center;
+    width: 50px;
+}
+
+.contact-icons i:first-child {
+    margin-right: $margin-16;
+}
+
+.contact-icons i {
+    display: none;
+}
+
+// Dialogs styles
+
+.detail-dialog {
+    max-width: 560px;
+}
+
+.dd-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: $margin-12;
+
+    h3 {
+        font-family: $font-primary !important;
+        font-size: $_font-size-24 !important;
+        line-height: $_line-spacing-24 !important;
+        letter-spacing: 0.18px;
+        color: $color-text-dark !important;
+        height: $padding-24 !important;
+    }
+
+    i {
+        cursor: pointer;
+    }
+}
+
+.dd-header-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.dd-contact-area {
+    padding-top: $padding-24;
+
+    h4 {
+        font-family: $font-secondary;
+        font-weight: $font-weight-5;
+        font-size: $_font-size-20;
+        line-height: $_line-spacing-24;
+        letter-spacing: 0.15px;
+        color: $color-text-dark;
+        height: $padding-24;
+        margin-top: $margin-12;
+        margin-bottom: $margin-12;
+    }
+
+    h6 {
+        font-family: $font-primary;
+        font-size: $_font-size-16;
+        line-height: $_line-spacing-14;
+        letter-spacing: 0.15px;
+        color: $color-text-title;
+        height: $padding-24;
+        margin-top: $margin-16;
+    }
+}

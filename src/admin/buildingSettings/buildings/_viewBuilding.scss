@@ -1,0 +1,112 @@
+.view-wrapper {
+    width: 28%;
+    margin: 92px auto 0px auto;
+
+    .building-heading {
+        font-family: 'Roboto-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(33, 33, 33, 0.87);
+        mix-blend-mode: normal;
+        margin-left: 12px;
+    }
+
+    .button-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 6px 16px 6px 12px;
+        background: #FFFFFF;
+        border: 1px solid #E4E4E4;
+        border-radius: 8px;
+        margin-right: 12px;
+        cursor: pointer;
+
+        .button-text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.1px;
+            color: rgba(33, 33, 33, 0.87);
+            margin-left: 8px;
+        }
+
+        .MuiSvgIcon-root {
+            height: 0.85em;
+        }
+    }
+
+    .sub-heading {
+        font-family: 'Roboto-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(33, 33, 33, 0.87);
+    }
+
+    .description {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(33, 33, 33, 0.87);
+        margin-left: 12px;
+    }
+
+
+}
+
+.dialog-heading-delete {
+
+
+    font-family: 'Roboto-medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    letter-spacing: 0.15px;
+
+
+    color: rgba(33, 33, 33, 0.87);
+
+    mix-blend-mode: normal;
+}
+
+.dialog-desc-building {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgba(33, 33, 33, 0.6);
+    mix-blend-mode: normal;
+
+    ul {
+        padding-top: .6rem;
+
+        li {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: rgba(33, 33, 33, 0.6);
+            mix-blend-mode: normal;
+            padding-bottom: .2rem
+        }
+    }
+}

@@ -1,0 +1,82 @@
+@import "assests/sass/variables";
+
+.learnmore-content {
+
+    @media (min-width: 768px) {
+        .container {
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .container {
+            max-width: 82% !important;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .container {
+            max-width: 82% !important;
+        }
+    }
+
+    .dual-column-image-block {
+
+        margin-bottom: 8rem;
+        margin-top: 6rem;
+
+        .content-column {
+            display: flex;
+            align-items: center;
+        }
+
+        .intro-brief {
+            line-height: 3.25rem;
+            margin-left: 2.5rem;
+            color: $color-green;
+            font-size: 0.9rem;
+            margin-bottom: -1rem;
+        }
+
+        .intro-slogan {
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: $font-Avenir;
+            color: #3E3E3E;
+            margin-bottom: 1rem;
+            line-height: 3.25rem;
+            margin-left: 2.5rem;
+        }
+
+        .intro-desc {
+            font-family: $font-primary;
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            color: rgba(33, 33, 33, 0.6);
+            margin-left: 2.5rem;
+            text-align: justify;
+
+        }
+
+        .image-column-right {
+            text-align: center;
+
+            video,
+            img {
+                max-width: 540px;
+                max-height: 304px;
+
+            }
+        }
+
+        .image-column-left {
+            text-align: center;
+
+            video,
+            img {
+                max-width: 540px;
+                max-height: 304px;
+            }
+        }
+    }
+}

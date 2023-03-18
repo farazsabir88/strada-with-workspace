@@ -1,0 +1,20 @@
+.invitee-email {
+    label {
+        color: rgba(33, 33, 33, 0.6);
+        margin-left: 10px;
+        font-size: 12px;
+    }
+}
+
+.select-role {
+    display: flex;
+    align-items: center;
+
+    p {
+        mix-blend-mode: normal;
+        margin-right: 10px;
+        padding-top: 10px;
+        letter-spacing: 0.5;
+
+    }
+}

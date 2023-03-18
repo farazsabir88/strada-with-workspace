@@ -1,0 +1,170 @@
+@import 'assests/sass/variables';
+
+.sidebar-wrapper {
+    width: 256px;
+    height: 97vh !important;
+    height: 100%;
+    left: 0px;
+    top: 64px;
+    background: #FFFFFF;
+    margin-right: $margin-24;
+    box-shadow: 0px 2px 2px rgba(97, 97, 97, 0.14), 0px 3px 1px -2px rgba(97, 97, 97, 0.12), 0px 1px 5px rgba(97, 97, 97, 0.2);
+    position: fixed;
+    left: 0;
+    top: 67px;
+    z-index: 100;
+
+
+
+    .settings-btn {
+        position: fixed;
+        bottom: 0;
+
+        .wrapper {
+            cursor: pointer;
+            margin-bottom: .5rem;
+            display: flex;
+            align-items: center;
+            padding-left: 24.5px;
+
+            p {
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                -webkit-letter-spacing: 0.1px;
+                -moz-letter-spacing: 0.1px;
+                -ms-letter-spacing: 0.1px;
+                letter-spacing: 0.1px;
+                margin-left: 6px;
+                font-family: 'Roboto-Medium';
+                color: rgba(33, 33, 33, 0.6);
+            }
+        }
+    }
+}
+
+.sidebar-spacer {
+    width: 256px;
+    height: 100vh !important;
+    height: 100%;
+    background: #FFFFFF;
+    margin-right: $margin-24;
+    box-shadow: 0px 2px 2px rgba(97, 97, 97, 0.14), 0px 3px 1px -2px rgba(97, 97, 97, 0.12), 0px 1px 5px rgba(97, 97, 97, 0.2);
+
+}
+
+.sidebar-links-wrapper {
+    margin: 8px;
+    // max-height: 60vh;
+    max-height: 70%;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+
+}
+
+
+.sidebar-header {
+    //min-height: 71px;
+    border-bottom: 1px solid #E4E4E4;
+    padding: 16px 0px 17px 24px;
+
+    .building-details-wrapper {
+        // height: 71px;
+        display: flex;
+        align-items: center;
+    }
+
+    .sb-text-wrapper {
+        margin-left: 1rem;
+
+        h6 {
+            font-weight: $font-weight-5;
+            font-size: $_font-size-14;
+            line-height: $_line-spacing-24;
+            letter-spacing: 0.1px;
+            color: $color-text-title;
+            font-family: $font-secondary;
+        }
+
+        p {
+            font-weight: $font-weight-4;
+            font-size: 14px;
+            line-height: $margin-16;
+            letter-spacing: 0.4px;
+            font-family: $font-primary;
+            color: $color-text-title;
+        }
+    }
+}
+
+.sidebar-header-2 {
+    border-bottom: 1px solid #E4E4E4;
+    padding: 16px 0px 0px 0px;
+
+    .building-details-wrapper {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #E4E4E4;
+        padding-left: 24px;
+        padding-bottom: 17px;
+    }
+
+    .sb-text-wrapper {
+        margin-left: 1rem;
+
+        h6 {
+            font-family: 'Roboto-Medium';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: rgba(33, 33, 33, 0.87);
+        }
+    }
+}
+
+.sidebar-backbutton {
+    display: flex;
+    align-items: center;
+    padding: $padding-16 0 0 0;
+    margin-top: $margin-24;
+    cursor: pointer;
+
+    h6 {
+        font-family: $font-secondary;
+        font-style: normal;
+        font-weight: $font-weight-5;
+        font-size: $_font-size-14;
+        line-height: $_line-spacing-24;
+        letter-spacing: 0.1px;
+        color: $color-light-grey;
+        mix-blend-mode: normal;
+        margin-left: $padding-16;
+    }
+}
+
+.sidebar-backbutton-2 {
+    display: flex;
+    align-items: center;
+    padding: $padding-16 0 $padding-16 $margin-24;
+    // margin-top: $margin-24;
+    cursor: pointer;
+
+    h6 {
+        font-family: $font-secondary;
+        font-style: normal;
+        font-weight: $font-weight-5;
+        font-size: $_font-size-14;
+        line-height: $_line-spacing-24;
+        letter-spacing: 0.1px;
+        color: $color-light-grey;
+        mix-blend-mode: normal;
+        margin-left: $padding-16;
+    }
+}

@@ -1,0 +1,246 @@
+.coi-file-uplaod {
+    width: 38%;
+    margin: auto;
+    margin-top: 92px;
+
+    .drap-section-cois {
+        width: 100%;
+        margin-bottom: 1.2rem;
+
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            text-align: center;
+            margin-bottom: 1.2rem;
+
+            .back-icon {
+                font-size: 24px !important;
+                color: rgba(33, 33, 33, 0.6) !important;
+                cursor: pointer;
+            }
+
+            p {
+                padding-left: .5rem;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+                letter-spacing: 0.5px;
+                color: rgba(33, 33, 33, 0.87);
+                mix-blend-mode: normal;
+                opacity: 0.87;
+            }
+        }
+
+
+        .preview-container-cois {
+
+            height: 7rem;
+            text-align: center;
+            font-size: 18px;
+            padding-top: 1.8rem;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.04);
+            border: 1px dashed rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+
+            img {
+                color: rgba(33, 33, 33, 0.6);
+                fill-opacity: .5;
+                opacity: .6;
+            }
+
+
+        }
+
+    }
+
+    .add-cois {
+        margin-left: auto;
+        margin-top: 1.5rem;
+    }
+
+    .loading-wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: .53rem;
+
+        .file-icon {
+            color: #7A7A7A;
+            font-size: 2.2rem;
+        }
+
+        .delete-icon {
+            color: #7A7A7A;
+        }
+
+        .inner-wrapper {
+            width: 76%;
+
+            .span-name {
+                font-size: 1rem;
+                color: #212121DE;
+            }
+
+            .span-loading {
+                font-size: 1rem;
+                color: #7A7A7A;
+            }
+
+            .success-icon {
+                color: #4caf50;
+                font-size: 1.19rem;
+
+            }
+
+            .span-success {
+                color: #4caf50;
+                font-size: .9rem;
+                font-family: 'Roboto-medium';
+            }
+        }
+    }
+
+    .select-field {
+
+        label {
+            top: 3px !important
+        }
+
+        .MuiFormControl-root {
+            width: 270px;
+            margin-right: 2rem;
+            margin-bottom: -1rem !important;
+        }
+
+        fieldset {
+            height: 54px !important;
+            top: -3px !important;
+        }
+    }
+
+    .attachment-divider {
+        margin-top: 8px;
+    }
+}
+
+.new-coi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .main-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+        margin-bottom: 24px;
+
+        .header-area {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-top: 50px;
+
+            .page-name {
+                font-size: 20px;
+                color: rgba(33, 33, 33, 0.87);
+                font-family: "AvenirNextLTPro Medium", serif;
+                margin-bottom: 8px;
+            }
+        }
+
+        .input-wrap {
+            display: flex;
+            width: 100%;
+            padding: 5px;
+            flex-direction: column;
+
+            .file-upload-secondary {
+                height: 100px;
+                background-color: #eee;
+            }
+        }
+
+        .rows {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            font-size: 16px;
+
+            .MuiSvgIcon-root {
+                height: 0.85em;
+                fill: #7A7A7A;
+            }
+
+            .attachment {
+                display: flex;
+                flex-direction: column;
+                font-size: 16px;
+                flex: 1;
+                padding-right: 20px;
+
+                .attachment-name {
+                    color: rgba(33, 33, 33, 0.87);
+                    max-width: 360px;
+                }
+
+                .attachment-label {
+                    display: flex;
+                    flex-direction: row;
+
+                    .logo {
+                        padding-top: 1px;
+                        padding-left: 5px;
+                        color: #4caf50;
+                    }
+
+                    .label {
+                        padding-left: 5px;
+                        font-family: Roboto;
+                        font-size: 15px;
+                        color: #4caf50;
+                        letter-spacing: 0.25px;
+                        line-height: 18px;
+                        margin-top: 4px;
+                    }
+                }
+
+                .attachment-coi {
+                    display: flex;
+                    flex-direction: row;
+
+                    .logo {
+                        padding-top: 1px;
+                        padding-left: 5px;
+                    }
+
+                    .label {
+                        padding-top: 3px;
+                        padding-left: 8px;
+                        font-family: Roboto;
+                        font-size: 15px;
+                        color: #949694;
+                        letter-spacing: 0.25px;
+                        line-height: 18px;
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+
+        .button {
+            align-self: flex-end;
+            margin-right: 10px;
+            margin-top: 24px;
+            background-color: #00CFA1;
+        }
+    }
+}

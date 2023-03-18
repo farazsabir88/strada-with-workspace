@@ -1,0 +1,31 @@
+@import 'assests/sass/variables';
+
+
+.demo-container {
+    height: 100vh;
+
+    .demo-content h1 {
+        font-size: $_font-size-48;
+        color: rgba(33, 33, 33, 0.87);
+        line-height: 64px;
+        margin-bottom: $margin-18;
+        font-weight: $font-weight-7;
+        font-family: $font-Avenir;
+    }
+
+    .demo-content p {
+        margin-bottom: 0;
+    }
+
+    .demo-content .login-link-area {
+        margin-top: $margin-38;
+    }
+}
+
+.thank-you-message{
+    margin-top: 39px;
+    font-size: 16px;
+    color: #00cfa1;
+    font-family: $font-primary;
+    text-align: center;
+}

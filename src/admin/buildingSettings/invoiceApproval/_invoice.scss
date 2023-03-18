@@ -1,0 +1,85 @@
+@import 'assests/sass/variables';
+
+.Invoice-container {
+
+
+    .header {
+        opacity: 0.87;
+        font-family: $font-primary;
+        font-size: 1.2rem;
+        color: #212121;
+        letter-spacing: 0.5px;
+    }
+
+    .desc {
+        font-family: $font-primary;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+        color: #2f303082;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .plus-icon {
+        color: $color-green;
+        margin-top: 12px;
+        margin-right: 4px;
+    }
+
+    .add-approver {
+
+        font-family: $font-primary;
+        font-size: 15px;
+        color: #00cfa1;
+        letter-spacing: 0.17px;
+        cursor: pointer;
+    }
+
+    .desc-2 {
+        font-family: $font-primary;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+        color: #2f303082;
+        padding-top: 0.6rem;
+        padding-bottom: .7rem;
+    }
+
+    .desc-3 {
+        font-family: $font-primary;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        color: #12212199;
+
+    }
+
+    .menu-icon {
+        color: #7A7A7A;
+        padding-left: .9rem;
+        margin-top: 1rem;
+    }
+
+    .edit-icon {
+        color: #7A7A7A;
+        margin-top: 1.5rem;
+        margin-right: 13px;
+    }
+
+    .delete-icon {
+        color: #7A7A7A;
+        margin-top: 12px;
+        margin-right: 7px;
+    }
+
+    .clear-icon {
+        color: #7A7A7A;
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+
+    }
+
+    .sub-heading {
+        color: #212121;
+    }
+}

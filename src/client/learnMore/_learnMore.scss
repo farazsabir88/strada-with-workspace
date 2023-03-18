@@ -1,0 +1,105 @@
+@import 'assests/sass/variables';
+
+.hero-section {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  flex-direction: column;
+
+  .intro-slogan {
+
+    font-size: $_font-size-48;
+    font-weight: bold;
+    font-family: $font-Avenir;
+    color: #3E3E3E;
+    margin-bottom: 1rem;
+    line-height: 3.25rem;
+
+  }
+
+  .intro-desc {
+    font-family: $font-primary;
+    font-size: 1.125rem;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+    color: rgba(33, 33, 33, 0.6);
+
+  }
+}
+
+
+.learn-more-bottom {
+  max-width: 900px;
+  padding: 104px 39px 0;
+  .header-bottom-header {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: $font-Avenir;
+    color: #3E3E3E;
+    line-height: 3.25rem;
+  }
+
+  .header-bottom-learnmore {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: $font-Avenir;
+    color: #3E3E3E;
+    margin-bottom: 7rem;
+    line-height: 3.25rem;
+  }
+
+  .img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem
+  }
+
+}
+
+.col-img {
+  padding: 104px 39px 99px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+    background-color: #f1f5f7;
+    margin: 190px 0 140px;
+
+  img {
+    width: 350px;
+    height: 197px
+  }
+
+  .intro-slogan {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Avenir";
+    color: #3E3E3E;
+    margin-bottom: 1rem;
+    line-height: 3.25rem;
+    margin-top: 2rem;
+    text-align: center;
+
+  }
+
+  .intro-desc {
+    font-family: $font-primary;
+    font-size: 1.125rem;
+    margin-bottom: auto;
+    line-height: 2rem;
+    color: rgba(33, 33, 33, 0.6);
+    text-align: center;
+    margin-right: 7rem;
+    margin-left: 7rem;
+
+  }
+}

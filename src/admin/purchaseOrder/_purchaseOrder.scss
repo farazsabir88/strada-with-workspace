@@ -1,0 +1,1280 @@
+@import '../../assests/sass/variables';
+
+.New-purchase-order {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 1200px;
+
+    .PO-top {
+        width: 55%;
+        align-self: center;
+
+        .head-po {
+            display: flex;
+            flex-direction: row;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: rgba(33, 33, 33, 0.87);
+            mix-blend-mode: normal;
+            opacity: 0.87;
+
+            .PO-arrow {
+                align-self: center;
+                margin-right: 20px;
+                color: rgba(33, 33, 33, 0.6);
+            }
+        }
+    }
+
+
+}
+
+.po-table-section {
+    .po-table {
+        margin-top: 24px;
+        border: 1px solid #0000002e;
+        min-height: 144px;
+
+        .po-table-head {
+            display: flex;
+            flex-direction: row;
+            padding: 16px 0px;
+            border-bottom: 1px solid #0000002e;
+
+            .po-head-description {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                width: 276px;
+                margin-left: 16px;
+
+                @media (max-width: 1450px) {
+                    width: 270px;
+                }
+
+                @media (max-width: 1400px) {
+                    width: 242px;
+                }
+
+                @media (max-width: 1360px) {
+                    width: 232px;
+                }
+
+                @media (max-width: 1315px) {
+                    width: 218px;
+                }
+
+                @media (max-width: 1290px) {
+                    width: 210px;
+                }
+            }
+
+            .po-head-account {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                width: 128px;
+            }
+
+            .po-head-QTY {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                width: 80px;
+            }
+
+            .po-head-price {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                width: 104px;
+                padding-left: 12px;
+            }
+
+            .po-head-amount {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                width: 104px;
+                padding-left: 30px;
+
+                @media (max-width: 1360px) {
+                    padding-left: 20px;
+                }
+
+                @media (max-width: 1300px) {
+                    padding-left: 14px;
+                }
+            }
+        }
+
+        .po-table-body {
+            display: flex;
+            flex-direction: row;
+            margin: 16px;
+
+            .po-body-description {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                width: 276px;
+            }
+
+            .po-body-account {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                width: 128px;
+                margin-left: 32px;
+            }
+
+            .po-body-QTY {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                width: 80px;
+                margin-left: 26px;
+            }
+
+            .po-body-price {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                width: 104px;
+                margin-left: 26px;
+            }
+
+            .po-body-amount {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                width: 104px;
+                margin-left: 26px;
+            }
+
+            .po-body-edit {
+                cursor: pointer;
+                font-family: Material Icons;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                margin-right: 14px;
+            }
+
+            .po-body-delete {
+                cursor: pointer;
+                font-family: Material Icons;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+
+        .po-table-empty {
+            padding: 34px 0px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.25px;
+            color: rgba(33, 33, 33, 0.6);
+        }
+
+        .po-table-input {
+            display: flex;
+            flex-direction: row;
+            margin-left: 16px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            .po-body-description {
+                width: 276px;
+
+                .MuiFormControl-root {
+                    width: 100%;
+                }
+
+                .MuiFormLabel-root {
+                    font-size: 12px;
+                }
+
+                .MuiFormLabel-root.Mui-error {
+                    color: #999999;
+                }
+
+                .Mui-focused {
+                    color: #00cfa1;
+                }
+
+                .MuiInputLabel-filled .MuiInputLabel-shrink {
+                    transform: translate(10px, 6px) scale(0.75);
+                }
+
+                .MuiInputBase-input {
+                    color: #504f4f;
+                    padding: 20px 8px 5px;
+                }
+            }
+
+            .po-body-account {
+                width: 128px;
+                margin-left: 32px;
+                font-size: 13px;
+
+                .MuiFormControl-root {
+                    width: 100%;
+                }
+
+                .MuiFormLabel-root {
+                    font-size: 12px;
+                }
+
+                .MuiFormLabel-root.Mui-error {
+                    color: #999999;
+                }
+
+                .Mui-focused {
+                    color: #00cfa1;
+                }
+
+                .MuiInputLabel-filled .MuiInputLabel-shrink {
+                    transform: translate(10px, 6px) scale(0.75);
+                }
+
+                .MuiInputBase-input {
+                    color: #504f4f;
+                    padding: 20px 8px 5px;
+                }
+            }
+
+            .po-body-QTY {
+                width: 80px;
+                margin-left: 32px;
+
+                .MuiFormControl-root {
+                    width: 100%;
+                }
+
+                .MuiFormLabel-root {
+                    font-size: 12px;
+                }
+
+                .MuiFormLabel-root.Mui-error {
+                    color: #999999;
+                }
+
+                .Mui-focused {
+                    color: #00cfa1;
+                }
+
+                .MuiInputLabel-filled .MuiInputLabel-shrink {
+                    transform: translate(10px, 6px) scale(0.75);
+                }
+
+                .MuiInputBase-input {
+                    color: #504f4f;
+                    padding: 20px 12px 5px;
+                }
+            }
+
+            .po-body-price {
+                width: 104px;
+                margin-left: 32px;
+
+                .MuiFormControl-root {
+                    width: 100%;
+                }
+
+                .MuiFormLabel-root {
+                    font-size: 12px;
+                }
+
+                .MuiFormLabel-root.Mui-error {
+                    color: #999999;
+                }
+
+                .Mui-focused {
+                    color: #00cfa1;
+                }
+
+                .MuiInputLabel-filled .MuiInputLabel-shrink {
+                    transform: translate(10px, 6px) scale(0.75);
+                }
+
+                .MuiInputBase-input {
+                    color: #504f4f;
+                    padding: 20px 8px 5px;
+                }
+            }
+
+            .po-body-amount {
+                width: 112px;
+                margin-left: 32px;
+
+                .MuiFormControl-root {
+                    width: 100%;
+
+                    .Mui-disabled {
+                        background-color: transparent;
+                    }
+                }
+
+                .MuiFormLabel-root {
+                    font-size: 12px;
+                }
+
+                .MuiFormLabel-root.Mui-error {
+                    color: #999999;
+                }
+
+                .Mui-focused {
+                    color: #00cfa1;
+                }
+
+                .MuiInputLabel-filled .MuiInputLabel-shrink {
+                    transform: translate(10px, 6px) scale(0.75);
+                }
+
+                .MuiInputBase-input {
+                    color: #504f4f;
+                    padding: 20px 8px 5px;
+                }
+            }
+
+            .po-body-done {
+                cursor: pointer;
+                font-family: Material Icons;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 24px;
+                margin-top: 8px;
+                color: #00cfa1;
+                margin-right: 19px;
+                padding-left: 4px;
+            }
+
+            .po-body-cancel {
+                cursor: pointer;
+                font-family: Material Icons;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 19px;
+                line-height: 24px;
+                margin-top: 8px;
+                margin-left: 24px;
+            }
+        }
+    }
+}
+
+// end of new PO
+
+.start-doller-sign {
+    margin-top: 1.125rem;
+    color: rgba(33, 33, 33, 0.6);
+}
+
+.Main-purchase-orders {
+    width: 80%;
+    margin-top: 62px;
+
+    .search-field-wrapper {
+        .filter-wrapper {
+            padding-right: 1rem;
+        }
+    }
+
+
+    .purchases {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        background-color: white;
+        padding-right: 20px;
+
+        .header-area {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+
+            .page-name {
+                font-size: 20px;
+                color: black;
+                // font-family: $font-avenir-next-medium;
+            }
+
+            .header-right {
+                display: flex;
+                flex-direction: row;
+
+                .input-search {
+                    margin-right: 24px;
+
+                    .MuiInputAdornment-positionEnd {
+                        margin-left: initial;
+                        padding: 6px;
+                        height: initial;
+                    }
+                }
+            }
+        }
+
+        .mainarea-PO {
+            padding-top: 10px;
+        }
+
+        .table-YPO {
+            border: 1px solid #00000026;
+            margin-top: 33px;
+            padding-top: 10px;
+            margin-right: 23px;
+            padding: 15px;
+        }
+    }
+}
+
+.f-badge {
+    border-radius: 200px;
+    height: 26px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    width: max-content;
+    margin-left: auto;
+    text-align: center;
+    padding: 5px 12px;
+
+
+}
+
+.waiting {
+    background: rgba(33, 150, 243, 0.08);
+    color: rgba(33, 150, 243, 0.87);
+}
+
+.approved {
+    background: rgba(76, 175, 80, 0.08);
+    color: #4caf50;
+}
+
+.not-approved {
+    background: rgba(198, 40, 40, 0.08);
+    color: rgba(198, 40, 40, 0.87);
+}
+
+.rejected {
+    background: rgba(249, 168, 37, 0.08);
+    color: rgba(249, 168, 37, 0.87);
+}
+
+.test {
+    color: red;
+}
+
+.PO-group {
+    display: flex;
+    flex-direction: column !important;
+    margin-top: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+
+
+    .PO-group-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        color: rgba(33, 33, 33, 0.6);
+    }
+
+    .PO-group-description {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: hsla(0, 0%, 6%, 0.871);
+    }
+}
+
+.heading-PO {
+    display: flex;
+    flex-direction: row;
+
+    .PO-name {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
+        letter-spacing: 0.15px;
+
+        color: rgba(33, 33, 33, 0.87);
+
+        mix-blend-mode: normal;
+        opacity: 0.87;
+    }
+
+    .PO-status {
+        margin-left: 16px;
+    }
+}
+
+
+// po approval page pdf
+
+.signpdfcontainer {
+    height: 100vh;
+    background-color: #ECEFF1;
+    font-family: 'Roboto-medium';
+}
+
+.signpdfcontainer .logo {
+    text-align-last: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.signpdfcontainer .logo .logo-css {
+    width: 150px;
+    vertical-align: middle;
+}
+
+.signpdfcontainer .table-container {
+    width: 70%;
+    background-color: white;
+    margin-left: 13%;
+    height: 660px;
+    padding: 30px;
+    position: relative;
+}
+
+.signpdfcontainer .table-container .heading {
+    padding-bottom: 17px;
+    border-bottom: 1px solid #0000002b;
+    color: black;
+    text-align: left;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    vertical-align: inherit;
+}
+
+.signpdfcontainer .table-container .table-pdf {
+    height: 543px !important;
+    overflow: scroll;
+}
+
+.signpdfcontainer .table-container .table-footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 11px;
+    right: 0;
+    display: flex;
+    color: black;
+    align-items: center;
+}
+
+.signpdfcontainer .table-container .table-footer .dropdown {
+    padding-right: 70px;
+}
+
+.signpdfcontainer .table-container .table-footer .title-two {
+    padding-right: 44px;
+}
+
+.signpdfcontainer .table-container .table-footer .arrow-left {
+    padding-right: 35px;
+}
+
+.signpdfcontainer .table-container .table-footer .arrow-right {
+    padding-right: 25px;
+}
+
+
+.person-list {
+    display: flex;
+}
+
+.person-list .icon {
+    padding-right: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.person-list .icon:hover .tooltiptext {
+    visibility: visible;
+}
+
+.person-list .icon .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #000000b5;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0 0 10px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.person-list .name {
+    padding-right: 5px;
+}
+
+.Budgetcalender-pagination {
+    padding-right: 150px;
+    height: 47px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
+}
+
+.vendor-pagination {
+    border-top: 1px solid rgba(224, 224, 224, 1);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
+}
+
+.table-container {
+    .MuiTableCell-root {
+        border-bottom: 1px solid #ddd !important;
+        padding: 5px !important;
+    }
+}
+
+.table-container {
+    .MuiTable-root {
+        th {
+            padding: 15px !important;
+            font-family: 'ROBOTO-MEDIUM';
+        }
+    }
+}
+
+
+.title-container {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #52525259;
+}
+
+.title-container .arrow {
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.title-container .not-approve {
+    margin-left: auto;
+    color: #00CFA1;
+    padding-right: 15px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.title-container .approve .MuiButton-containedSecondary {
+    color: #FFFFFF;
+    background-color: #00CFA1;
+    height: 30px;
+    width: 78px;
+    font-size: 10px;
+}
+
+
+.dialog-container {
+    display: flex;
+}
+
+.dialog-container .image {
+    width: 60%;
+}
+
+.dialog-container .details {
+    width: 40%;
+}
+
+.dialog-container .details .heading {
+    opacity: 0.87;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: black;
+    letter-spacing: 0.5px;
+    padding-bottom: 4%;
+    font-weight: 500;
+}
+
+.dialog-container .details .gl {
+    display: flex;
+    opacity: 0.87;
+    font-family: Helvetica;
+    font-size: 10px;
+    color: #212121;
+    letter-spacing: 0.5px;
+}
+
+.dialog-container .details .gl .title {
+    padding-right: 7%;
+}
+
+.dialog-container .details .amount {
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 7%;
+    opacity: 0.87;
+    font-family: Helvetica;
+    font-size: 10px;
+    color: #212121;
+    letter-spacing: 0.5px;
+}
+
+.dialog-container .details .amount .title {
+    padding-right: 20%;
+}
+
+.dialog-container .details .GLtable {}
+
+.dialog-container .details .GLtable .heading {
+    display: flex;
+    padding: 11px 11px 11px 20px;
+    font-family: Helvetica;
+    font-size: 12px;
+    color: black;
+    letter-spacing: 0.5px;
+    padding-bottom: 2%;
+    font-weight: 500;
+}
+
+.dialog-container .details .GLtable .heading .name {
+    width: 46%;
+}
+
+.dialog-container .details .GLtable .heading .date {
+    width: 30%;
+}
+
+.dialog-container .details .GLtable .content {
+    display: flex;
+    font-family: Helvetica;
+    font-size: 11px;
+    color: #212121cf;
+    letter-spacing: 0.5px;
+    padding-left: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.dialog-container .details .GLtable .content .name {
+    width: 45%;
+}
+
+.dialog-container .details .GLtable .content .date {
+    width: 30%;
+}
+
+.dialog-container .details .GLtable .content .date .TotalAmount {
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.dialog-container .details .persons {
+    border: 1px solid #52525259;
+}
+
+.dialog-container .details .persons .heading {
+    display: flex;
+    padding: 11px;
+    font-family: Helvetica;
+    font-size: 12px;
+    color: black;
+    letter-spacing: 0.5px;
+    padding-bottom: 4%;
+    font-weight: 500;
+}
+
+.dialog-container .details .persons .heading .name {
+    width: 62%;
+}
+
+.dialog-container .details .persons .heading .date {
+    width: 30%;
+}
+
+.dialog-container .details .persons .content {
+    display: flex;
+    border-top: 1px solid #52525259;
+    font-family: Helvetica;
+    font-size: 11px;
+    color: #212121cf;
+    letter-spacing: 0.5px;
+    padding-left: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.dialog-container .details .persons .content .name {
+    width: 60%;
+}
+
+.dialog-container .details .persons .content .date {
+    width: 30%;
+}
+
+.dialog-container .details .notes-heading {
+    opacity: 0.87;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: black;
+    letter-spacing: 0.5px;
+    padding-bottom: 3%;
+    font-weight: 500;
+    padding-top: 17px;
+}
+
+.dialog-container .details .notes-des {
+    display: flex;
+    opacity: 0.87;
+    font-family: Helvetica;
+    font-size: 10px;
+    color: #212121;
+    letter-spacing: 0.5px;
+}
+
+.PO-approver-box {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    .building-name {
+        width: 82px;
+        height: 24px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.15px;
+        color: rgba(33, 33, 33, 0.87);
+    }
+
+    .PO-double {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+
+        .item-one {
+            .po-heading {
+                width: 123px;
+                height: 24px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+                color: rgba(33, 33, 33, 0.87);
+            }
+
+            .po-desc {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: 0.25px;
+                color: rgba(33, 33, 33, 0.6);
+            }
+        }
+
+        .item-two {
+            margin-left: 200px;
+
+            .po-heading {
+                height: 24px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+                color: rgba(33, 33, 33, 0.87);
+            }
+
+            .po-desc {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: 0.25px;
+                color: rgba(33, 33, 33, 0.6);
+            }
+        }
+    }
+
+    .PO-single {
+        margin-top: 20px;
+
+        .po-heading {
+            height: 24px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: rgba(33, 33, 33, 0.87);
+        }
+
+        .po-desc {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: rgba(33, 33, 33, 0.6);
+        }
+    }
+
+    .details-PO-approver {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+
+        .detail-head {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: rgba(33, 33, 33, 0.87);
+        }
+
+        .detail-table {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(33, 33, 33, 0.12);
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin-top: 16px;
+
+            .detail-table-head {
+                display: flex;
+                flex-direction: row;
+                padding: 10px 0px;
+                border-bottom: 1px solid #00000024;
+
+                .head-description {
+                    width: 171px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 24px;
+                    letter-spacing: 0.1px;
+                    color: rgba(33, 33, 33, 0.87);
+                    margin-left: 12px;
+                }
+
+                .head-account {
+                    width: 100px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 24px;
+                    margin-left: 7px;
+                    letter-spacing: 0.1px;
+                    color: rgba(33, 33, 33, 0.87);
+                }
+
+                .head-QTY {
+                    width: 50px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 24px;
+                    margin-left: 15px;
+                    letter-spacing: 0.1px;
+                    color: rgba(33, 33, 33, 0.87);
+                }
+
+                .head-price {
+                    width: 69px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 24px;
+                    margin-left: 15px;
+                    letter-spacing: 0.1px;
+                    color: rgba(33, 33, 33, 0.87);
+                }
+
+                .head-amount {
+                    width: 76px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 24px;
+                    margin-left: 15px;
+                    letter-spacing: 0.1px;
+                    color: rgba(33, 33, 33, 0.87);
+                }
+            }
+
+            .detail-table-body {
+                display: flex;
+                flex-direction: row;
+                margin: 10px 0px;
+
+                .head-description {
+                    width: 380px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-left: 16px;
+                    letter-spacing: 0.25px;
+                    color: rgba(33, 33, 33, 0.87);
+                }
+
+                .head-account {
+                    width: 128px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-left: 32px;
+                    letter-spacing: 0.25px;
+                    color: rgba(33, 33, 33, 0.87);
+                }
+
+                .head-QTY {
+                    width: 80px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-left: 32px;
+                    letter-spacing: 0.25px;
+                    color: rgba(33, 33, 33, 0.87);
+                }
+
+                .head-price {
+                    width: 104px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-left: 32px;
+                    letter-spacing: 0.25px;
+                    color: rgba(33, 33, 33, 0.87);
+                }
+
+                .head-amount {
+                    width: 104px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-left: 32px;
+                    letter-spacing: 0.25px;
+                    color: rgba(33, 33, 33, 0.87);
+                }
+            }
+        }
+    }
+}
+
+.po-approval-gl-table {
+    margin-bottom: 15px;
+
+    .po-approval-gl {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+
+        .name {
+            width: 120px;
+            height: 24px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: rgba(33, 33, 33, 0.87);
+            mix-blend-mode: normal;
+            opacity: 0.87;
+        }
+
+        .date {
+            width: 120px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: rgba(33, 33, 33, 0.87);
+            mix-blend-mode: normal;
+            opacity: 0.87;
+        }
+    }
+
+}
+
+.POApproval {
+    .MuiDialog-paperWidthSm {
+        max-width: 100vw !important;
+    }
+}
+
+.popper-wrapper-po {
+    // margin-left: .6rem;
+    text-align: center;
+    margin: 0 .5rem;
+}
+
+.purchase-order-popover {
+    width: 200px !important;
+    margin-right: 2.8rem;
+
+    .icon-btn {
+        letter-spacing: 0.00938em;
+        padding: 12px 16px;
+        font-size: 14px !important;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: $font-primary;
+        cursor: pointer;
+        color: #212121DE;
+
+        .edit-text {
+            margin-left: .7rem;
+            font-size: 15px;
+            color: #2e2828;
+        }
+
+        .edit-icon {
+            color: #7A7A7A;
+        }
+
+        .view-properties {
+            margin-left: .7rem;
+            font-size: 15px;
+            color: #212121DE;
+        }
+
+        .delete-text {
+            margin-left: .4rem;
+            font-size: 16px;
+            color: #212121DE;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+    }
+}
+
+
+.empty-filtered-array {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: rgba(33, 33, 33, 0.87);
+    margin: 4rem 0;
+
+}

@@ -1,0 +1,562 @@
+body:has(.formio-dialog) {
+    overflow: hidden;
+}
+
+.heading-margin {
+    margin-top: 70px;
+    margin-left: 10px;
+    position: fixed;
+    color: rgba(33, 33, 33, .6);
+}
+
+.gu-transit {
+    width: 100%;
+    min-height: 70px;
+}
+
+.drag-copy {
+    background-color: #00cfa1 !important;
+    border-color: #00cfa1 !important;
+}
+
+.formio {
+    width: 100%;
+    margin-top: 90px;
+
+    .formcomponents {
+        width: 25%;
+
+        .builder-sidebar_search {
+            display: none;
+        }
+
+        .form-builder-panel {
+            border: none;
+
+            .form-builder-group-header {
+                display: none;
+            }
+
+            span.btn.btn-primary.btn-sm.btn-block.formcomponent.drag-copy {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 6px 12px;
+                width: 190px;
+                height: 36px;
+                background: #00CFA1;
+                border-radius: 8px;
+                font-family: 'Roboto-medium';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                border-color: #00CFA1;
+
+                i {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .show {
+        position: fixed;
+        top: 186px;
+    }
+
+    .formarea {
+        width: 225%;
+        max-width: none;
+        position: absolute;
+        // top: 100px;
+        // left: 320px;
+        top: 625px;
+        left: 100%;
+
+        .component-btn-group {
+
+
+            // display: none;
+            // .component-settings-button-edit{
+            //     display: none;
+            // }
+            .component-settings-button-move {
+                display: none;
+            }
+
+            .component-settings-button-edit-json {
+                display: none;
+            }
+
+            .component-settings-button-paste {
+                display: none;
+            }
+
+            .component-settings-button-copy {
+                display: none;
+            }
+
+            .component-settings-button-paste-below {
+                display: none;
+            }
+        }
+    }
+
+    button.btn {
+        display: none;
+    }
+}
+
+.flex-div {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.rfp-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(33, 33, 33, 0.87);
+    mix-blend-mode: normal;
+    opacity: 0.87;
+    margin-left: 12px;
+}
+
+.questions-p {
+    font-family: 'Roboto-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(33, 33, 33, 0.87);
+    margin: 10px 0px;
+    mix-blend-mode: normal;
+    opacity: 0.87;
+}
+
+.rfpSwitchDiv {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+        letter-spacing: 0.25px;
+
+        /* Typography / On Surface / Hight emphasis */
+        color: rgba(33, 33, 33, 0.87);
+        margin-left: 6px;
+        mix-blend-mode: normal;
+        opacity: 0.87;
+    }
+}
+
+.formio-component-questions {
+    label {
+        display: block;
+    }
+}
+
+.formio-button-remove-row {
+    display: none;
+}
+
+.formio-dialog-content {
+    background-color: #FFFFFF !important;
+}
+
+.drag-and-drop-alert {
+    background-color: #00CFA1 !important;
+    color: white !important;
+    // width: 650px !important;
+}
+
+.formio-component-file {
+    .list-group {
+        margin-bottom: 20px;
+    }
+
+    .fileSelector {
+        a {
+            color: inherit;
+        }
+    }
+
+    .col-md-2 {
+        display: none;
+    }
+}
+
+
+.formio-component-questions {
+    .table-bordered tbody tr {
+        display: inline-block !important;
+        height: 50px !important;
+    }
+}
+
+.formio-component-values {
+    .table-bordered tbody tr {
+        display: inline-block !important;
+        height: 50px !important;
+    }
+}
+
+.formio-component-datagrid {
+    .table-bordered {
+        border-collapse: inherit;
+    }
+
+    .table-bordered tbody {
+        tr {
+            display: inline-block !important;
+            height: 50px !important;
+            border-width: 0 !important;
+
+            td {
+                border-width: 0px !important;
+                // display: none;
+
+                input {
+                    width: 170px;
+                }
+            }
+        }
+    }
+
+    tfoot {
+        tr {
+            border-width: 0px !important;
+
+            td {
+                border-width: 0px !important;
+            }
+        }
+    }
+}
+
+.formio-component-questions {
+    .table-bordered thead tr th {
+        display: none;
+    }
+}
+
+.formio-component-values {
+    .table-bordered thead tr th {
+        display: none;
+    }
+}
+
+.formio-component-datagrid {
+    .table-bordered thead tr th {
+        display: none;
+    }
+}
+
+.formio-component-datagrid {
+    label {
+        display: none;
+    }
+}
+
+.formio-component-questions {
+    label {
+        display: block;
+    }
+}
+
+.formio-component-values {
+    label {
+        display: block;
+    }
+}
+
+
+.formio-component-tooltip {
+    display: none;
+}
+
+.formio-dialog {
+    .formio-dialog-content {
+        position: relative;
+        top: 100px;
+        width: 50% !important;
+        height: 70% !important;
+
+        .formio-dialog-close {
+            display: none;
+        }
+
+        .component-edit-container {
+
+            .formio-component-survey {
+                thead {
+                    color: rgba(33, 33, 33, .6) !important;
+                    border: 0px !important;
+
+                    tr {
+                        border-width: 0 !important;
+                    }
+
+                    th {
+                        border-width: 0px !important;
+                    }
+                }
+
+
+                tbody {
+                    border: 0px !important;
+
+                    tr {
+                        border-width: 0 !important;
+                    }
+
+                    td {
+                        border-width: 0px !important;
+                    }
+                }
+            }
+
+            // width: 50%;
+            .float-right {
+                display: none;
+            }
+
+            .table-bordered {
+                border: 0px !important;
+            }
+
+            .btn {
+                // display: none;
+                height: auto;
+                width: auto;
+                margin-top: 100px;
+                font-size: 16px;
+            }
+
+            .formio-drag-button {
+                display: none;
+            }
+
+            .formio-button-remove-row {
+                display: none;
+            }
+
+            .btn-success {
+                background-color: #00CFA1 !important;
+                border: 1px solid #00CFA1 !important;
+                margin-left: 40px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                width: 66px;
+                height: 36px;
+                /* identical to box height, or 143% */
+                text-align: center;
+                letter-spacing: 0.1px;
+
+                /* Base / Surface */
+                color: #FFFFFF;
+                border-radius: 8px;
+            }
+
+            .btn-secondary {
+                // display: none;
+                // margin-left: 4px !important;
+                color: #00CFA1 !important;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                /* identical to box height, or 143% */
+                text-align: center;
+                letter-spacing: 0.1px;
+                background-color: #FFFFFF;
+                border: 0px !important;
+            }
+
+            .btn-danger {
+                display: none;
+                font-size: 0px;
+            }
+
+            i {
+                display: none;
+            }
+
+            .card {
+                border: 0px
+            }
+
+            .preview-panel {
+
+                .card-body {
+                    overflow-x: scroll;
+                }
+
+                .card-header {
+                    background-color: transparent;
+                    border-bottom: 0px;
+
+                    .card-header-tabs {
+                        .nav-item {
+
+                            a {
+                                border-color: transparent;
+                                color: black;
+                            }
+
+                        }
+                    }
+
+                }
+
+                // background-color: #F0F0F0 !important;
+                h4 {
+                    margin-bottom: 12px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    /* identical to box height, or 150% */
+                    letter-spacing: 0.15px;
+
+                    /* Typography / On Surface / Hight emphasis */
+                    color: rgba(33, 33, 33, 0.87);
+
+                    mix-blend-mode: normal;
+                    opacity: 0.87;
+                }
+            }
+
+            .formio-button-add-row {
+                background-color: #00CFA1 !important;
+                border: 1px solid #00CFA1 !important;
+                margin-top: 2px !important;
+            }
+        }
+    }
+}
+
+.formio-component-value {
+    display: none;
+}
+
+.formio-component-label {
+    margin-top: 2px;
+}
+
+.alert-warning {
+    display: none;
+}
+
+.template-body {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    padding: 5px;
+}
+
+.rfpHeadershow {
+    .formarea {
+        width: 225%;
+        max-width: none;
+        position: absolute;
+        top: 1270px;
+        left: 100%;
+    }
+}
+
+.rfpHeaderhidden {
+    .formarea {
+        width: 225%;
+        max-width: none;
+        position: absolute;
+        top: 945px;
+        left: 100%;
+    }
+}
+
+.formio-component {
+    .card {
+        border: 0px;
+
+        .card-header {
+            background-color: transparent;
+            border-bottom: 0px;
+
+            .card-header-tabs {
+                .nav-item {
+
+                    a {
+                        border-color: transparent;
+                        color: black;
+                    }
+
+                }
+            }
+
+        }
+
+
+    }
+}
+
+.builder-component {
+    .formio-component-survey {
+
+        thead {
+            color: rgba(33, 33, 33, .6) !important;
+            border: 0px !important;
+
+            tr {
+                border-width: 0 !important;
+            }
+
+            th {
+                border-width: 0px !important;
+            }
+        }
+
+        tbody {
+            border: 0px !important;
+
+            tr {
+                border-width: 0 !important;
+            }
+
+            td {
+                color: rgba(33, 33, 33, .6) !important;
+                border-width: 0px !important;
+            }
+        }
+    }
+}
+
+.list-group-item {
+    color: rgba(33, 33, 33, .6) !important;
+}
+
+body {
+    color: rgba(33, 33, 33, .6) !important;
+}
+
+.col-form-label {
+    color: #575757;
+}

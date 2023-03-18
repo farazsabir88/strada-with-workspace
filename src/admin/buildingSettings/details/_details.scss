@@ -1,0 +1,100 @@
+@import 'assests/sass/variables';
+
+.detail-main-wrapper {
+    margin: 1.8rem 0;
+}
+
+.edit-building-heading {
+    font-family: 'Roboto-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(33, 33, 33, 0.87);
+    mix-blend-mode: normal;
+    margin-left: 12px;
+}
+
+.building-settings-detail-heading {
+    font-size: 18px;
+    color: rgba(33, 33, 33, .87);
+    font-family: 'Roboto';
+}
+
+.building-settings-detail-sub-heading {
+    font-size: $_font-size-16;
+    color: #21212199;
+    font-family: $font-primary;
+    margin-bottom: $margin-16;
+    margin-top: 2.1rem;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    float: right;
+    margin-bottom: 2rem;
+    margin-top: 10px;
+}
+
+.error-message {
+    display: flex;
+    font-size: 12px !important;
+    color: #D32F2F;
+    margin-left: 10px;
+    padding-bottom: 1.1rem;
+}
+
+.edit-workspace-wrapper {
+    width: 450px;
+    margin: auto;
+
+    #container {
+        margin: 25px auto;
+        cursor: pointer;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: #00cfa1;
+        border-radius: 7px;
+
+        #name {
+            display: block;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            line-height: 100px;
+        }
+    }
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    border-radius: 7px;
+    transition: .3s ease;
+    background: rgba(0, 0, 0, 0.32);
+}
+
+#container:hover .overlay {
+    opacity: 1;
+}
+
+.icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}

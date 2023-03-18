@@ -1,0 +1,98 @@
+@import 'assests/sass/variables';
+
+.invoicing-wrapper {
+    width: 100%;
+    margin: $margin-24;
+    margin-top: 87px;
+
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: $margin-8;
+
+        .header-text {
+            font-family: 'Roboto-Medium';
+            font-size: 24px;
+            line-height: 36px;
+            color: rgba(33, 33, 33, 0.87);
+            letter-spacing: 0.5px;
+            font-weight: 550;
+        }
+
+        .button-wrapper {
+            width: 130px;
+            height: 36px;
+        }
+    }
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.invoicing-popover {
+    width: 180px !important;
+    margin-right: 2.8rem;
+
+    .chart-btn {
+        letter-spacing: 0.00938em;
+        padding: 12px 16px;
+        font-size: 14px !important;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: $font-primary;
+        cursor: pointer;
+
+        .edit-text {
+            margin-left: .7rem;
+            font-size: 17px;
+            color: #2e2828;
+        }
+
+        .edit-delete-icon {
+            color: #2e2828;
+        }
+
+        .delete-text {
+            margin-left: .4rem;
+            font-size: 17px;
+            color: #2e2828;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+    }
+}
+
+.no-data-wrapper {
+    .empty-template-header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: $margin-8;
+
+        .header-text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            letter-spacing: .18px;
+            color: rgba(33, 33, 33, .87);
+            margin-top: 1rem;
+            margin-left: 1.5rem;
+        }
+    }
+
+    .empty-template-wrapper {
+        margin: auto;
+        margin-top: 5rem;
+        width: 11rem;
+    }
+}

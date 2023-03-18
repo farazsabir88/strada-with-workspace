@@ -1,0 +1,64 @@
+@import 'assests/sass/variables';
+.integration-wrapper{
+    margin-top: $margin-18;
+}
+.integration-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: $padding-18;
+    border-bottom: 1px solid rgba(33,33,33,.12);
+    margin-top: $margin-16;
+    .left-side{
+        display: flex;
+        align-items: center;
+        .icon-wrapper{
+            margin-right: 10px;
+        }
+        .icon-wrapper{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+           border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .right-side{
+        display: flex;
+        align-items: baseline;
+        .status-box{
+            display: flex;
+            flex-direction: column;
+            margin-right: $margin-16;
+            .status{
+                font-weight: $font-weight-5;
+                color: $color-green;
+                font-family: $font-secondary;
+                font-size: 13px;
+
+            }
+        }
+    }
+    .text-area{
+        display: flex;
+        flex-direction: column;
+        h4{
+         font-family: $font-primary;
+         font-size: $_font-size-16;
+         color: $color-text-title;
+         line-height: $_line-spacing-24;     
+        }
+        p{
+            font-size: $_font-size-14;
+            line-height: $_line-spacing-14;
+            color: #212121;
+            opacity: 0.6;
+            margin-top: 6px; 
+            font-family: $font-primary;
+            font-weight: 400;
+        }
+    }
+
+}

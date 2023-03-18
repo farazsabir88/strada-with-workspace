@@ -1,0 +1,835 @@
+.checklist-print {
+    margin-top: 72px;
+
+    .checklist-print-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px 0px 20px;
+    }
+}
+
+.checklist-print-wrapper {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+
+    .checklist-name {
+        margin: 10px 0px 20px 0px;
+        font-family: 'Roboto-medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.18px;
+        color: rgba(33, 33, 33, 0.87);
+
+        .checklist-created-at {
+            font-family: 'Roboto-medium';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.4px;
+            color: rgba(33, 33, 33, 0.6);
+            margin-top: 5px;
+        }
+    }
+
+    .assignee-div {
+        font-family: 'Roboto-medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(33, 33, 33, 0.87);
+        margin-top: 10px;
+
+        .assigne-item {
+            display: flex;
+            align-items: center;
+            margin: 15px 0px;
+
+            .MuiAvatar-root {
+                width: 26px !important;
+                height: 26px !important;
+            }
+
+            p {
+                font-family: 'Roboto-medium';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.25px;
+                color: rgba(33, 33, 33, 0.87);
+                margin-left: 7px;
+            }
+        }
+    }
+
+    .task-summary-div {
+        .task-heading-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0px;
+
+            p {
+                font-family: 'Roboto-medium';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+                color: rgba(33, 33, 33, 0.87);
+            }
+
+            h6 {
+                font-family: 'Roboto-medium';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: right;
+                letter-spacing: 0.25px;
+                color: rgba(33, 33, 33, 0.6);
+            }
+        }
+
+        .task-table-item {
+            display: flex;
+            width: 100%;
+            border: 1px solid #E4E4E4;
+            height: 50px;
+
+            .index-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-right: 1px solid #E4E4E4;
+                font-family: 'Roboto-medium';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.4px;
+                color: rgba(33, 33, 33, 0.87);
+                width: 40px;
+            }
+
+            .task-div {
+                display: flex;
+                align-items: center;
+                width: 100%;
+
+                p {
+                    font-family: 'Roboto-medium';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.25px;
+                    text-decoration-line: line-through;
+                    color: rgba(33, 33, 33, 0.87);
+                    margin-left: 6px;
+                }
+            }
+
+            .completed-by-div {
+                width: 30%;
+                padding: 0px 5px 0px 0px;
+                border-left: 1px solid #E4E4E4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    font-family: 'Roboto-medium';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+                    letter-spacing: 0.4px;
+                    color: rgba(33, 33, 33, 0.87);
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+
+    .task-details-div {
+        margin: 18px 0px 10px 0px;
+
+        .task-heading {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            p {
+                font-family: 'Roboto-medium';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+                color: rgba(33, 33, 33, 0.87);
+                margin-left: 6px;
+            }
+        }
+
+        .task-form-wrapper {
+            width: 100%;
+            margin: auto;
+            padding-bottom: 20px;
+
+            .task-form-item {
+                padding: 15px 0px;
+                margin: auto;
+                font-family: 'Roboto-medium';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: rgba(33, 33, 33, 0.87);
+
+                .email-item-wrap {
+                    pointer-events: none;
+
+                    .MuiOutlinedInput-root.MuiInputBase-root {
+                        pointer-events: none;
+                    }
+
+
+                    .MuiFormControl-root {
+                        width: 100%;
+
+                        .MuiFilledInput-input {
+                            padding-left: 10px;
+                        }
+
+                        .MuiFilledInput-input {
+                            padding: 15px;
+                        }
+                    }
+                }
+
+                .website-field {
+                    .MuiSvgIcon-root {
+                        margin-top: 10px;
+                    }
+                }
+
+                .MuiFormControl-root {
+                    width: 100%;
+                }
+
+                .file-div {
+                    padding: 4px 7px;
+                    border: 1px solid #E4E4E4;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    width: 55%;
+                    margin-bottom: 15px;
+
+                    h6 {
+                        font-family: 'Roboto-medium';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 20px;
+                        letter-spacing: 0.25px;
+                        color: rgba(33, 33, 33, 0.87);
+                        margin-left: 6px;
+                    }
+
+                    p {
+                        font-family: 'Roboto-medium';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 16px;
+                        letter-spacing: 0.4px;
+                        color: rgba(33, 33, 33, 0.6);
+                        margin-left: 6px;
+                    }
+
+                    .file-download-icon {
+                        .MuiSvgIcon-root {
+                            height: 0.7em;
+                        }
+                    }
+
+                    .file-icons-div {
+                        display: flex;
+                        align-items: center;
+
+                        .MuiSvgIcon-root {
+                            height: 0.7em;
+                        }
+                    }
+                }
+
+                .merge-tag-div {
+                    padding: 8px;
+                    // width: 134px;
+                    // height: 32px;
+                    background: rgba(0, 0, 0, 0.04);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    height: fit-content;
+                    width: fit-content;
+                    margin-left: 8px;
+                    min-width: fit-content;
+                    cursor: pointer;
+
+                    span {
+                        font-family: 'Roboto-medium';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: 0.1px;
+                        color: rgba(33, 33, 33, 0.6);
+                        margin: 0px 4px;
+                    }
+                }
+
+                .file-label {
+                    font-family: 'Roboto-medium';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.15px;
+                    color: rgba(33, 33, 33, 0.6);
+                }
+
+                .file-input-wrap {
+                    text-align: center;
+                    width: 100%;
+
+                    .file-input-div {
+                        padding: 6px 16px 6px 12px;
+                        border: 1px solid #E4E4E4;
+                        width: fit-content;
+                        border-radius: 6px;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 15px;
+                        cursor: pointer;
+
+                        p {
+                            font-family: 'Roboto-medium';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-align: center;
+                            letter-spacing: 0.1px;
+                            color: rgba(33, 33, 33, 0.87);
+                            margin-left: 8px;
+                        }
+
+                        .MuiSvgIcon-root {
+                            height: 0.85em;
+                            fill: rgba(33, 33, 33, 0.87);
+                        }
+                    }
+                }
+
+                .file-description-div {
+                    .MuiFormControl-root {
+                        width: 100%;
+                    }
+
+                    margin-bottom: 15px;
+                }
+
+                .website-field-div {
+                    .MuiInputLabel-filled {
+                        margin-left: 35px;
+                    }
+
+                    .MuiFilledInput-input {
+                        margin-left: 15px;
+                    }
+                }
+
+                .multi-select-wrapper {
+                    input {
+                        width: -webkit-fill-available;
+                    }
+                }
+
+                .sended-email-div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+
+                    .receiver-details {
+                        display: flex;
+                        align-items: center;
+
+                        p {
+                            font-family: 'Roboto-Medium';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 0.15px;
+                            color: rgba(33, 33, 33, 0.87);
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .expend-div {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+
+                        p {
+                            font-family: 'Roboto-medium';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 20px;
+                            text-align: center;
+                            letter-spacing: 0.1px;
+                            color: #00CFA1;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                .sendEmail-cleanField-wrapper {
+                    display: flex;
+                    margin-bottom: 12px;
+
+                    h6 {
+                        width: 56px;
+                        height: 24px;
+                        font-family: 'Roboto-Medium';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.15px;
+                        color: rgba(33, 33, 33, 0.87);
+                        text-align: right;
+                    }
+
+                    .cleaned-text {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.5px;
+                        color: rgba(33, 33, 33, 0.87);
+                        margin-left: 16px;
+
+                        ol {
+                            margin-left: 15px;
+                            font-size: initial;
+
+                            li {
+                                list-style: unset !important;
+                                margin-left: 15px;
+                            }
+                        }
+
+                        ul {
+                            margin-left: 15px;
+                            font-size: initial;
+                            list-style: unset !important;
+
+                            li {
+                                list-style: unset !important;
+                                margin-left: 15px;
+                            }
+                        }
+
+                        p,
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6,
+                        ul,
+                        ol,
+                        br {
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+            }
+
+            .task-form-item-error {
+                padding: 15px 0px;
+                margin: auto;
+                font-family: 'Roboto-medium';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: rgba(33, 33, 33, 0.87);
+
+                .email-item-wrap {
+                    pointer-events: none;
+
+                    .MuiOutlinedInput-root.MuiInputBase-root {
+                        pointer-events: none;
+                    }
+
+                    .MuiFormControl-root {
+                        width: 100%;
+
+                        .MuiFilledInput-input {
+                            padding-left: 10px;
+                        }
+
+                        .MuiFilledInput-input {
+                            padding: 15px;
+                        }
+                    }
+                }
+
+                .website-field {
+                    .MuiSvgIcon-root {
+                        margin-top: 10px;
+                    }
+                }
+
+                .MuiFormControl-root {
+                    width: 100%;
+                }
+
+                .file-div {
+                    padding: 4px 7px;
+                    border: 1px solid #E4E4E4;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    width: 55%;
+                    margin-bottom: 15px;
+
+                    h6 {
+                        font-family: 'Roboto-medium';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 20px;
+                        letter-spacing: 0.25px;
+                        color: rgba(33, 33, 33, 0.87);
+                        margin-left: 6px;
+                    }
+
+                    p {
+                        font-family: 'Roboto-medium';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 16px;
+                        letter-spacing: 0.4px;
+                        color: rgba(33, 33, 33, 0.6);
+                        margin-left: 6px;
+                    }
+
+                    .file-download-icon {
+                        .MuiSvgIcon-root {
+                            height: 0.7em;
+                        }
+                    }
+                }
+
+                .makeStyles-root-5.Mui-focused {
+                    box-shadow: 0 0 0 1px #C62828 !important;
+                    border-color: #C62828 !important;
+                }
+
+                .makeStyles-root-5 {
+                    box-shadow: 0 0 0 1px #C62828 !important;
+                    border-color: #C62828 !important;
+                }
+
+                .duedate-error {
+                    font-family: 'Roboto-medium';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 12px;
+                    letter-spacing: 0.4px;
+                    color: #C62828;
+                    display: flex;
+                    margin-top: 6px;
+                }
+            }
+
+            .send-email-div {
+                padding: 8px;
+                border-radius: 5px;
+                border: 1px solid #E4E4E4;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                cursor: pointer;
+                margin-top: 10px;
+
+                p {
+                    font-family: 'Roboto-medium';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.1px;
+                    color: rgba(33, 33, 33, 0.87);
+                    margin-left: 5px;
+                }
+            }
+
+            .send-email-disabled-div {
+                padding: 8px;
+                border-radius: 5px;
+                border: 1px solid #E4E4E4;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                cursor: not-allowed;
+                margin-top: 10px;
+
+                p {
+                    font-family: 'Roboto-medium';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.1px;
+                    color: rgba(33, 33, 33, 0.87);
+                    margin-left: 5px;
+                }
+            }
+
+            .activity-div {
+                .heading {
+                    font-family: 'Roboto-medium';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 0.15px;
+                    color: rgba(33, 33, 33, 0.87);
+                }
+
+                .activity-section {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 8px 0px;
+                    // margin-bottom: 130px;
+                    transition: 200ms ease-in;
+
+                    .comment {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 11px 0px;
+
+                        .MuiAvatar-root.MuiAvatar-circular {
+                            height: 35px;
+                            width: 35px;
+                        }
+
+                        .comment-details {
+                            margin-left: 10px;
+                            width: 100%;
+
+                            .comment-heading {
+                                flex-direction: row;
+                                display: flex;
+
+                                .comment-name {
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    letter-spacing: 0.15px;
+                                    color: rgba(33, 33, 33, 0.87);
+                                    flex: none;
+                                    order: 0;
+                                    flex-grow: 0;
+                                }
+
+                                .comment-time {
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    display: flex;
+                                    align-items: center;
+                                    letter-spacing: 0.4px;
+                                    color: rgba(33, 33, 33, 0.6);
+                                    flex: none;
+                                    flex-grow: 0;
+                                    margin: 0px 8px;
+                                }
+
+                                .comment-options {
+                                    margin-left: auto;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .comment-detail {
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 20px;
+                                letter-spacing: 0.25px;
+                                color: rgba(33, 33, 33, 0.6);
+                                white-space: pre-wrap;
+                                word-break: break-word;
+                            }
+
+                            .comment-data {
+                                font-family: 'Roboto-medium';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                letter-spacing: 0.25px;
+                                color: rgba(33, 33, 33, 0.87);
+                                white-space: pre-wrap;
+                                word-break: break-word;
+
+                                span {
+                                    color: rgb(0, 207, 161);
+                                }
+                            }
+
+                            .comment-attachment-wrapper {
+                                font-family: 'Roboto-medium';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                letter-spacing: 0.25px;
+                                color: rgba(33, 33, 33, 0.87);
+
+                                p {
+                                    color: #00CFA1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .history-single {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 10px 0px;
+
+                    .history-description {
+                        font-family: 'Roboto-medium';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 20px;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.15px;
+                        color: rgba(33, 33, 33, 0.87);
+                        flex-wrap: wrap;
+
+                        b {
+                            font-family: 'Roboto-Medium';
+                            font-weight: bold;
+                        }
+                    }
+
+                    .history-time {
+                        font-family: 'Roboto-medium';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 11px;
+                        line-height: 16px;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.4px;
+                        color: rgba(33, 33, 33, 0.6);
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-date-div {
+        display: flex;
+        align-items: center;
+        padding: 4px 12px;
+        gap: 8px;
+        width: 268px;
+        min-height: 48px;
+        height: fit-content;
+        background: #FFFFFF;
+        border: 1px solid rgba(33, 33, 33, 0.38);
+        border-radius: 8px;
+
+        p {
+            font-family: 'Roboto-medium';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.4px;
+            color: rgba(33, 33, 33, 0.6);
+        }
+
+        h6 {
+            font-family: 'Roboto-medium';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: rgba(33, 33, 33, 0.87);
+        }
+    }
+
+    .form-date-div:focus {
+        border: 2px solid #00CFA1;
+
+        p {
+            color: #00CFA1;
+        }
+    }
+}
+
+@media print {
+    .checklist-print-wrapper {
+        display: block;
+        width: 90%;
+
+        b {
+            font-weight: 500;
+        }
+    }
+}

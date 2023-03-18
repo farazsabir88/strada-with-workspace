@@ -1,0 +1,78 @@
+.create-new-workspace-wrapper {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+
+    .create-new-workspace-form {
+        width: 40%;
+
+        .heading {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 0.18px;
+            color: rgba(33, 33, 33, 0.87);
+        }
+
+        .input-field-wrapper-error {
+            margin: 20px 0px;
+            width: 100%;
+
+            .MuiFormControl-root {
+                margin-bottom: 0px;
+            }
+
+            .MuiFilledInput-root.Mui-focused {
+                color: red;
+                border-color: red;
+            }
+
+            .css-14e2le4-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+                color: red;
+            }
+        }
+
+        .input-field-wrapper {
+            margin: 20px 0px;
+            width: 100%;
+
+            .MuiFormControl-root {
+                margin-bottom: 0px;
+            }
+        }
+
+        .members-heading {
+            font-family: 'Roboto-Medium';
+            font-size: 24px;
+            line-height: 36px;
+            color: rgba(33, 33, 33, 0.87);
+            letter-spacing: 0.5px;
+            font-weight: 550;
+        }
+
+        .select-role {
+            display: flex;
+            align-items: center;
+
+            p {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: rgba(33, 33, 33, 0.6);
+                mix-blend-mode: normal;
+                margin-right: 10px;
+                padding-top: 10px;
+            }
+        }
+
+        .button-div {
+            margin-top: 20px;
+            text-align: right;
+        }
+    }
+}

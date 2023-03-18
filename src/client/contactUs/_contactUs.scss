@@ -1,0 +1,71 @@
+@import "assests/sass/variables";
+
+.contactus-container {
+    height: 100%;
+
+    .contactus-content h1 {
+        font-size: $_font-size-48;
+        color: rgba(33, 33, 33, 0.87);
+        line-height: 64px;
+        margin-bottom: $margin-38;
+        font-weight: $font-weight-7;
+        margin-top: 123px;
+        text-align: center;
+        font-family: $font-Avenir;
+    }
+
+    .contactus-content .login-link-area {
+        margin-top: $margin-38;
+    }
+}
+
+.mui-select {
+    margin-top: -1.4rem;
+
+    .MuiFormControlLabel-label {
+        margin-top: 1.2rem !important;
+    }
+}
+.contact-us-button {
+    width: 255px;
+    text-align: left;
+    margin-top: 18px;
+}
+
+// Office location Section
+
+.office-grid-container {
+    margin-top: 5rem;
+}
+
+.contacts-box-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contacts-box-wrapper .contacts-list-wrapper {
+    width: 208px;
+
+    .single-contact {
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+
+        .icon-wrapper {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 0.875rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: $color-text-content;
+            font-family: $font-primary;
+        }
+    }
+}
+
+.contact-img-wrapper {
+    text-align: center;
+}

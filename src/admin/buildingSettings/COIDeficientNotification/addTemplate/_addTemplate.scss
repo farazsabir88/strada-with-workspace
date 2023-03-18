@@ -1,0 +1,53 @@
+@import 'assests/sass/variables';
+
+.add-template-container {
+    width: 52%;
+    margin: auto;
+    margin-top: 87px;
+
+    .stack-header {
+        margin-top: 1rem;
+        margin-bottom: 1.7rem;
+
+        .template-heading {
+            font-family: 'Roboto-medium';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: .15px;
+            color: rgba(33, 33, 33, .87);
+            mix-blend-mode: normal;
+            opacity: .87;
+            margin-bottom: 2px;
+        }
+
+        .back-div {
+            height: 26px;
+            width: 36px;
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+
+            .back-icon {
+                color: #7A7A7A;
+            }
+
+            &:hover {
+                border: 1px solid $color-green;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .error-message-editor {
+        display: flex;
+        font-size: 14px !important;
+        justify-content: flex-end;
+        color: red;
+        padding: 0;
+        margin: 0;
+        padding-top: 0.5rem;
+    }
+}

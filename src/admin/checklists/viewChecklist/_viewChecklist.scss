@@ -1,0 +1,2276 @@
+.archive-div {
+    background: #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    margin-top: 64px;
+
+    P {
+        margin-bottom: 0;
+    }
+
+    .archive-heading-data {
+        margin: auto;
+        width: -webkit-fill-available;
+
+        h6 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.15px;
+            color: rgba(33, 33, 33, 0.87);
+            mix-blend-mode: normal;
+        }
+
+        p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.4px;
+            color: rgba(33, 33, 33, 0.6);
+            mix-blend-mode: normal;
+        }
+    }
+
+    .archive-icon-div {
+        margin-left: auto;
+        margin-right: 15px;
+        cursor: pointer;
+
+        .MuiSvgIcon-root {
+            fill: rgba(33, 33, 33, 0.6);
+        }
+    }
+}
+
+.create-checklist-module {
+    height: 100vh;
+    overflow: hidden;
+
+    P {
+        margin-bottom: 0;
+    }
+
+    .header-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        height: 64px;
+        margin-top: 64px;
+        border-bottom: 1px solid #E4E4E4;
+
+        .MuiInputBase-root.MuiFilledInput-root {
+            height: 48px;
+            margin-top: 20px;
+            width: 520px;
+        }
+
+        .header-left-div {
+            display: flex;
+            align-items: center;
+
+            .arrow-back-div {
+                padding: 5px 16px 0px 16px;
+            }
+
+            p {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 1.25rem;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+                margin-top: 6px;
+                color: rgba(33, 33, 33, 0.87);
+            }
+
+            .MuiFilledInput-input {
+                width: 240px !important;
+                padding: 4px !important;
+                margin: 0px 6px !important;
+            }
+
+            .MuiInputBase-input {
+                color: rgba(33, 33, 33, 0.87);
+            }
+        }
+
+        .MuiSvgIcon-root {
+            fill: rgba(33, 33, 33, 0.6);
+        }
+
+        @media screen and (max-width: 600px) {
+            height: 105px;
+            background: #FAFAFA;
+            border-bottom: none;
+
+            .MuiInputBase-root.MuiFilledInput-root {
+                height: 36px;
+                margin-top: 20px;
+                width: 100%;
+            }
+
+            .header-left-div {
+                display: flex;
+                align-items: center;
+                width: 100%;
+
+                .arrow-back-div {
+                    padding: 5px 8px 0px 8px;
+                }
+
+                .MuiFilledInput-input {
+                    width: 240px !important;
+                    padding: 4px !important;
+                    margin: 0px 6px !important;
+                }
+
+                .rename-checklist-div {
+                    svg {
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+            }
+
+            .side-bar-div {
+                height: fit-content;
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+
+    .task-wrap-div {
+        position: relative;
+        height: calc(100vh - 129px);
+        padding: 17px;
+        background: #FAFAFA;
+        overflow-y: scroll;
+
+        .task-item-wrapper {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .task-index {
+                width: 25px;
+                font-size: 0.9rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .hand-icon {
+                    svg {
+                        height: 12px;
+                        width: 12px;
+                    }
+                }
+
+                .hand-icon-focus {
+                    svg {
+                        height: 12px;
+                        width: 12px;
+                    }
+
+                    path {
+                        fill: #00CFA1;
+                    }
+                }
+
+                .hand-icon-error {
+                    svg {
+                        height: 12px;
+                        width: 12px;
+                    }
+
+                    path {
+                        fill: #C62828;
+                    }
+                }
+            }
+
+            .task-duedate-status-div {
+                border-radius: 8px;
+                padding: 4px;
+                margin-left: auto;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.65rem;
+                text-align: center;
+                letter-spacing: 0.4px;
+                color: #2196F3;
+                background-color: white;
+            }
+
+            .task-data-div {
+                background-color: white;
+                //    padding:2px 8px 2px 2px;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                border: 1px solid #E4E4E4;
+
+                p {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-size: 1rem;
+                    letter-spacing: 0.5px;
+                    color: rgba(33, 33, 33, 0.87);
+                }
+            }
+
+            .task-data-div:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+
+            .task-completd-time {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.75rem;
+                letter-spacing: 0.4px;
+                color: rgba(33, 33, 33, 0.6);
+            }
+        }
+
+        // @media screen and (min-width: 1300px) {
+        //     height: 91vh;
+        // }
+
+        // @media screen and (min-width: 1500px) {
+        //     height: 92vh;
+        // }
+
+        // @media screen and (min-width: 1800px) {
+        //     height: 93vh;
+        // }
+
+        // @media screen and (min-width: 2000px) {
+        //     height: 94vh;
+        // }
+
+        @media screen and (max-width: 600px) {
+            padding: 0px 5px 8px 2px;
+
+            .task-listing-avatargroup {
+                .MuiAvatar-colorDefault {
+                    height: 18px;
+                    width: 18px;
+                }
+
+                .MuiAvatarGroup-avatar {
+                    height: 18px;
+                    width: 18px;
+                    font-size: 0.5rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            height: calc(100% - 172px);
+        }
+    }
+
+    .middle-grid-wrapper {
+        position: relative;
+        height: calc(100vh -130px);
+        // overflow-y: scroll;
+
+        .MuiSvgIcon-root {
+            fill: rgba(33, 33, 33, 0.6);
+        }
+
+        .subItems-groups .MuiSvgIcon-root {
+            fill: #00CFA1;
+        }
+
+        .task-name-div {
+            // height:50px;
+            padding: 15px 0px;
+            width: 70%;
+            margin: auto;
+            border-bottom: 1px solid #E4E4E4;
+
+            .task-name-p {
+                padding-top: 15px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.3rem;
+                line-height: 24px;
+                letter-spacing: 0.18px;
+                color: rgba(33, 33, 33, 0.87);
+            }
+
+            .task-name-long-p {
+                padding-top: 15px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.125rem;
+                line-height: 24px;
+                letter-spacing: 0.18px;
+                color: rgba(33, 33, 33, 0.87);
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 90%;
+                padding-top: 20px;
+            }
+        }
+
+        .assign-duedate-div {
+            width: 70%;
+            margin: auto;
+            padding: 8px 0px;
+            display: flex;
+            align-items: center;
+
+            .assign-duedate-innerdiv {
+                display: flex;
+                align-items: center;
+                margin-right: 14px;
+                margin-bottom: 10px;
+                padding: 5px 10px 5px 5px;
+                cursor: pointer;
+
+                .MuiSvgIcon-root {
+                    height: 0.7em;
+                }
+
+                p {
+                    font-family: 'Roboto-Medium';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 0.85rem;
+                    line-height: 20px;
+                    text-align: center;
+                    letter-spacing: 0.1px;
+                    color: rgba(33, 33, 33, 0.6);
+                    margin-left: 4px;
+                }
+
+                .MuiAvatar-colorDefault {
+                    height: 28px;
+                    width: 28px;
+                    font-size: 11px;
+                    background-color: #00CFA1;
+
+                    @media screen and (max-width: 600px) {
+                        height: 22px;
+                        width: 22px;
+                    }
+                }
+
+                @media screen and (max-width: 600px) {
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                }
+            }
+
+            .assign-duedate-innerdiv:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 90%;
+            }
+        }
+
+        .task-form-wrapper {
+            height: calc(79vh - 153px);
+            overflow-y: scroll;
+            width: 100%;
+            margin: auto;
+            padding-bottom: 70px;
+
+            .css-1uap9im-MuiFormControl-root-MuiTextField-root {
+                margin-bottom: 0px;
+            }
+
+            .css-1q7k2fz-MuiInputBase-root-MuiFilledInput-root {
+                padding: 0px;
+            }
+
+            .task-form-item {
+                padding: 15px 0px;
+                width: 70%;
+                margin: auto;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: rgba(33, 33, 33, 0.87);
+
+                .MuiInputLabel-filled {
+                    margin-right: 4px;
+                }
+
+                .MuiFilledInput-input {
+                    margin-top: 6px;
+                }
+
+                .email-item-wrap {
+                    .MuiFormControl-root {
+                        width: 100%;
+
+                        .MuiFilledInput-input {
+                            padding-left: 10px;
+                        }
+
+                        .MuiFilledInput-input {
+                            padding: 15px;
+                        }
+                    }
+                }
+
+                .website-field {
+                    .MuiSvgIcon-root {
+                        margin-top: 10px;
+                    }
+
+                    .MuiTextField-root {
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .MuiFormControl-root {
+                    width: 100%;
+                }
+
+                .file-div {
+                    padding: 4px 7px;
+                    border: 1px solid #E4E4E4;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    width: 55%;
+                    margin-bottom: 15px;
+
+                    h6 {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 20px;
+                        letter-spacing: 0.25px;
+                        color: rgba(33, 33, 33, 0.87);
+                        margin-left: 6px;
+                    }
+
+                    p {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 16px;
+                        letter-spacing: 0.4px;
+                        color: rgba(33, 33, 33, 0.6);
+                        margin-left: 6px;
+                    }
+
+                    .file-download-icon {
+                        .MuiSvgIcon-root {
+                            height: 0.7em;
+                        }
+                    }
+
+                    .file-icons-div {
+                        display: flex;
+                        align-items: center;
+
+                        .MuiSvgIcon-root {
+                            height: 0.7em;
+                        }
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        width: 100%;
+                    }
+                }
+
+                // .tox .tox-statusbar {
+                //     display: none;
+                // }
+                .merge-tag-div {
+                    padding: 8px;
+                    // width: 134px;
+                    // height: 32px;
+                    background: rgba(0, 0, 0, 0.04);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    height: fit-content;
+                    width: fit-content;
+                    margin-left: 8px;
+                    min-width: fit-content;
+                    cursor: pointer;
+
+                    span {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: 0.1px;
+                        color: rgba(33, 33, 33, 0.6);
+                        margin: 0px 4px;
+                    }
+                }
+
+                .file-label {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.15px;
+                    color: rgba(33, 33, 33, 0.6);
+                }
+
+                .file-input-wrap {
+                    text-align: center;
+                    width: 100%;
+
+                    .file-input-div {
+                        padding: 6px 16px 6px 12px;
+                        border: 1px solid #E4E4E4;
+                        width: fit-content;
+                        border-radius: 6px;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 15px;
+                        cursor: pointer;
+
+                        p {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-align: center;
+                            letter-spacing: 0.1px;
+                            color: rgba(33, 33, 33, 0.87);
+                            margin-left: 8px;
+                        }
+
+                        .MuiSvgIcon-root {
+                            height: 0.85em;
+                            fill: rgba(33, 33, 33, 0.87);
+                        }
+                    }
+                }
+
+                .file-description-div {
+                    .MuiFormControl-root {
+                        width: 100%;
+                    }
+
+                    margin-bottom: 15px;
+                }
+
+                .website-field-div {
+                    .MuiInputLabel-filled {
+                        margin-left: 35px;
+                    }
+
+                    .MuiFilledInput-input {
+                        margin-left: 15px;
+                    }
+                }
+
+                .editor-div {
+                    text-align: left;
+                    color: rgba(33, 33, 33, 0.87);
+
+                    ol {
+                        margin-left: 20px;
+                        font-size: initial;
+
+                        li {
+                            list-style: unset !important;
+                            margin-left: 20px;
+
+                            @media screen and (max-width: 600px) {
+                                margin-left: 4px;
+                            }
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            margin-left: 4px;
+                        }
+                    }
+
+                    ul {
+                        margin-left: 20px;
+                        font-size: initial;
+                        list-style: unset !important;
+
+                        li {
+                            list-style: unset !important;
+                            margin-left: 20px;
+
+                            @media screen and (max-width: 600px) {
+                                margin-left: 4px;
+                            }
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            margin-left: 4px;
+                        }
+                    }
+
+                    p,
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6,
+                    ul,
+                    ol,
+                    br {
+                        margin-top: 12px;
+                    }
+
+                    a {
+                        color: rgba(33, 33, 33, 0.87);
+                        text-decoration: none;
+                    }
+                }
+
+                .multi-select-wrapper {
+                    input {
+                        width: -webkit-fill-available;
+                    }
+                }
+
+                .sended-email-div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+
+                    .receiver-details {
+                        display: flex;
+                        align-items: center;
+
+                        p {
+                            font-family: 'Roboto-Medium';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 0.15px;
+                            color: rgba(33, 33, 33, 0.87);
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .expend-div {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+
+                        p {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 20px;
+                            text-align: center;
+                            letter-spacing: 0.1px;
+                            color: #00CFA1;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                .sendEmail-cleanField-wrapper {
+                    display: flex;
+                    margin-bottom: 12px;
+
+                    h6 {
+                        width: 56px;
+                        height: 24px;
+                        font-family: 'Roboto-Medium';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.15px;
+                        color: rgba(33, 33, 33, 0.87);
+                        text-align: right;
+                    }
+
+                    .cleaned-text {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.5px;
+                        color: rgba(33, 33, 33, 0.87);
+                        margin-left: 16px;
+
+                        ol {
+                            margin-left: 15px;
+                            font-size: initial;
+
+                            li {
+                                list-style: unset !important;
+                                margin-left: 15px;
+                            }
+                        }
+
+                        ul {
+                            margin-left: 15px;
+                            font-size: initial;
+                            list-style: unset !important;
+
+                            li {
+                                list-style: unset !important;
+                                margin-left: 15px;
+                            }
+                        }
+
+                        p,
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6,
+                        ul,
+                        ol,
+                        br {
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+
+                .multiSelectContainer input {
+                    font-size: 20px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 90%;
+                    padding: 10px 0px;
+
+                }
+            }
+
+            .task-form-item-error {
+                padding: 15px 0px;
+                width: 70%;
+                margin: auto;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: rgba(33, 33, 33, 0.87);
+
+                .email-item-wrap {
+                    .MuiFormControl-root {
+                        width: 100%;
+
+                        .MuiFilledInput-input {
+                            padding-left: 10px;
+                        }
+
+                        .MuiFilledInput-input {
+                            padding: 15px;
+                        }
+                    }
+                }
+
+                .website-field {
+                    .MuiSvgIcon-root {
+                        margin-top: 10px;
+                    }
+
+                    .MuiTextField-root {
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .MuiFormControl-root {
+                    width: 100%;
+                }
+
+                .file-div {
+                    padding: 4px 7px;
+                    border: 1px solid #E4E4E4;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    width: 55%;
+                    margin-bottom: 15px;
+
+                    h6 {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 20px;
+                        letter-spacing: 0.25px;
+                        color: rgba(33, 33, 33, 0.87);
+                        margin-left: 6px;
+                    }
+
+                    p {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 16px;
+                        letter-spacing: 0.4px;
+                        color: rgba(33, 33, 33, 0.6);
+                        margin-left: 6px;
+                    }
+
+                    .file-download-icon {
+                        .MuiSvgIcon-root {
+                            height: 0.7em;
+                        }
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        width: 100%;
+                    }
+                }
+
+                .makeStyles-root-5.Mui-focused {
+                    box-shadow: 0 0 0 1px #C62828 !important;
+                    border-color: #C62828 !important;
+                }
+
+                .makeStyles-root-5 {
+                    box-shadow: 0 0 0 1px #C62828 !important;
+                    border-color: #C62828 !important;
+                }
+
+                .duedate-error {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 12px;
+                    letter-spacing: 0.4px;
+                    color: #C62828;
+                    display: flex;
+                    margin-top: 6px;
+                }
+
+                .editor-div {
+                    text-align: left;
+                    color: rgba(33, 33, 33, 0.87);
+
+                    ol {
+                        margin-left: 15px;
+                        font-size: initial;
+
+                        li {
+                            list-style: unset !important;
+                            margin-left: 15px;
+                        }
+                    }
+
+                    ul {
+                        margin-left: 15px;
+                        font-size: initial;
+                        list-style: unset !important;
+
+                        li {
+                            list-style: unset !important;
+                            margin-left: 15px;
+                        }
+                    }
+
+                    p,
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6,
+                    ul,
+                    ol,
+                    br {
+                        margin-top: 12px;
+                    }
+
+                    a {
+                        color: rgba(33, 33, 33, 0.87);
+                        text-decoration: none;
+                    }
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 90%;
+                    padding: 10px 0px;
+                }
+            }
+
+            .send-email-div {
+                padding: 8px;
+                border-radius: 5px;
+                border: 1px solid #E4E4E4;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                cursor: pointer;
+                margin-top: 10px;
+
+                p {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.1px;
+                    color: rgba(33, 33, 33, 0.87);
+                    margin-left: 5px;
+                }
+            }
+
+            .send-email-disabled-div {
+                padding: 8px;
+                border-radius: 5px;
+                border: 1px solid #E4E4E4;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                cursor: not-allowed;
+                margin-top: 10px;
+
+                p {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.1px;
+                    color: rgba(33, 33, 33, 0.87);
+                    margin-left: 5px;
+                }
+            }
+
+            .content-buttons-div {
+                display: flex;
+                margin: auto;
+                width: 70%;
+                align-items: center;
+                padding: 15px 0px;
+
+                .complete-button-div {
+                    .MuiSvgIcon-root {
+                        fill: white;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        width: 100%;
+
+                    }
+                }
+
+                .disabled-button-div {
+                    .MuiSvgIcon-root {
+                        fill: #C6C6C6;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        width: 100%;
+                    }
+                }
+
+
+                .next-button-div {
+                    padding: 9px 7px 9px 14px;
+                    border-radius: 5px;
+                    border: 1px solid #E4E4E4;
+                    display: flex;
+                    align-items: center;
+                    width: fit-content;
+                    cursor: pointer;
+                    margin-left: 15px;
+
+                    p {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        text-align: center;
+                        letter-spacing: 0.1px;
+                        color: rgba(33, 33, 33, 0.87);
+                        margin-right: 5px;
+                    }
+
+                    .MuiSvgIcon-root {
+                        height: 0.5em;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        width: 100%;
+                        padding: 8px;
+                        margin-left: 0px;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 10px;
+                    }
+                }
+
+                .multiSelectContainer input {
+                    font-size: revert;
+                }
+
+                @media screen and (max-width: 600px) {
+                    display: block;
+                    width: 90%;
+                }
+            }
+
+            .activity-wrapper {
+                margin: auto;
+                width: 70%;
+                align-items: center;
+                padding-bottom: 15px;
+
+                .heading {
+                    font-family: 'Roboto-Medium';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.15px;
+                    color: rgba(33, 33, 33, 0.87);
+                }
+
+                .activity-section {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 8px 25px 32px;
+                    // margin-bottom: 130px;
+                    transition: 200ms ease-in;
+
+                    .comment {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 11px 0px;
+
+                        .MuiAvatar-root.MuiAvatar-circular {
+                            height: 35px;
+                            width: 35px;
+                        }
+
+                        .comment-details {
+                            margin-left: 10px;
+                            width: 100%;
+
+                            .comment-heading {
+                                flex-direction: row;
+                                display: flex;
+
+                                .comment-name {
+                                    font-family: 'Roboto';
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    letter-spacing: 0.15px;
+                                    color: rgba(33, 33, 33, 0.87);
+                                    flex: none;
+                                    order: 0;
+                                    flex-grow: 0;
+                                }
+
+                                .comment-time {
+                                    font-family: 'Roboto';
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    display: flex;
+                                    align-items: center;
+                                    letter-spacing: 0.4px;
+                                    color: rgba(33, 33, 33, 0.6);
+                                    flex: none;
+                                    flex-grow: 0;
+                                    margin: 0px 8px;
+                                }
+
+                                .comment-options {
+                                    margin-left: auto;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .comment-detail {
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 20px;
+                                letter-spacing: 0.25px;
+                                color: rgba(33, 33, 33, 0.6);
+                                white-space: pre-wrap;
+                                word-break: break-word;
+                            }
+
+                            .comment-data {
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                letter-spacing: 0.25px;
+                                color: rgba(33, 33, 33, 0.87);
+                                white-space: pre-wrap;
+                                word-break: break-word;
+
+                                span {
+                                    color: rgb(0, 207, 161);
+                                }
+                            }
+
+                            .comment-attachment-wrapper {
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                letter-spacing: 0.25px;
+                                color: rgba(33, 33, 33, 0.87);
+
+                                p {
+                                    color: #00CFA1;
+                                }
+
+                                a {
+                                    color: #00CFA1;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        padding: 0px;
+                    }
+                }
+
+                .activity-details {
+                    display: flex;
+                    flex-direction: row;
+                    padding-top: 8px;
+
+                    .activity-show-title {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.25px;
+                        color: rgba(33, 33, 33, 0.6);
+                        flex: none;
+                        order: 0;
+                        flex-grow: 0;
+                        margin: 14px 7px 0px 0px;
+                    }
+
+                    .activity-description {
+                        cursor: pointer;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px 12px;
+                        position: static;
+                        height: 36px;
+                        background: #ffffff;
+                        border: 1px solid rgba(33, 33, 33, 0.12);
+                        border-radius: 16px;
+                        flex: none;
+                        order: 1;
+                        flex-grow: 0;
+                        margin: 0px 0px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 16px;
+                        text-align: center;
+                        letter-spacing: 0.4px;
+                        color: rgba(33, 33, 33, 0.87);
+                        margin: 5px 8px 0px 0px;
+                    }
+
+                    .activity-selected {
+                        background: rgba(0, 207, 161, 0.12) !important;
+                        color: #00cfa1 !important;
+                        border-color: rgba(0, 207, 161, 0.12) !important;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        padding: 8px 0px;
+                    }
+                }
+
+                .history-single {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 10px 0px;
+
+                    .history-description {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 20px;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.15px;
+                        color: rgba(33, 33, 33, 0.87);
+                        flex-wrap: wrap;
+
+                        b {
+                            font-family: 'Roboto-Medium';
+                            font-weight: bold;
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            display: block;
+                        }
+                    }
+
+                    .history-time {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 11px;
+                        line-height: 16px;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.4px;
+                        color: rgba(33, 33, 33, 0.6);
+                        margin-left: 10px;
+
+                        @media screen and (max-width: 600px) {
+                            margin-left: 0px;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 90%;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                height: auto;
+                overflow-y: unset;
+                padding-bottom: 20px;
+            }
+
+            @media screen and (min-width: 1300px) {
+                height: calc(82vh - 153px);
+            }
+
+            @media screen and (min-width: 1500px) {
+                height: calc(83vh - 153px);
+            }
+
+            @media screen and (min-width: 1680px) {
+                height: calc(84vh - 153px);
+            }
+
+            @media screen and (min-width: 1800px) {
+                height: calc(85vh - 153px);
+            }
+
+            @media screen and (min-width: 2000px) {
+                height: calc(86vh - 153px);
+            }
+
+            // @media screen and (min-width: 300px) {
+            //     padding-bottom: 0px;
+            //     height: 50vh;
+            // }
+
+            // @media screen and (min-width: 400px) {
+            //     padding-bottom: 0px;
+            //     height: 40vh;
+            // }
+
+            // @media screen and (min-width: 500px) {
+            //     padding-bottom: 0px;
+            //     height: 30vh;
+            // }
+        }
+
+        @media screen and (max-width: 600px) {
+            height: calc(100vh - 75px);
+            overflow-y: scroll;
+        }
+
+        // @media screen and (min-width: 1300px) {
+        //     height: 91vh;
+        // }
+
+        // @media screen and (min-width: 1500px) {
+        //     height: 92vh;
+        // }
+
+        // @media screen and (min-width: 1800px) {
+        //     height: 93vh;
+        // }
+
+        // @media screen and (min-width: 2000px) {
+        //     height: 94vh;
+        // }
+
+        .add-comment-wrapper {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            // height: 27vh;
+            z-index: 100;
+            right: 3px;
+            background: #FFFFFF;
+            box-shadow: 0px 8px 10px 1px rgba(97, 97, 97, 0.14), 0px 3px 14px 2px rgba(97, 97, 97, 0.12), 0px 5px 5px -3px rgba(97, 97, 97, 0.2);
+
+            .comment-wrap {
+                margin: auto;
+                width: 70%;
+                display: flex;
+                padding: 10px 0px;
+
+                .comment-input {
+                    width: 100%;
+
+                    .MuiFormControl-root {
+                        width: 100%;
+                    }
+
+                    .label {
+                        padding: 5px 10px;
+                    }
+
+                    .mentions__input {
+                        padding: 4px;
+                    }
+                }
+
+                .comment-button-flex-div {
+                    display: flex;
+
+                    .comment-button-div {
+                        padding: 7px 14px 7px 7px;
+                        margin: 5px 10px 0px 0px;
+                        border-radius: 5px;
+                        border: 1px solid #E4E4E4;
+                        display: flex;
+                        align-items: center;
+                        width: fit-content;
+                        cursor: pointer;
+
+                        p {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-align: center;
+                            letter-spacing: 0.1px;
+                            color: rgba(33, 33, 33, 0.87);
+                            margin-left: 5px;
+                        }
+
+                        .MuiSvgIcon-root {
+                            height: 0.5em;
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            width: 100%;
+                            justify-content: center;
+                            margin: 10px 0px;
+                        }
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        display: block;
+                    }
+                }
+
+                .comment-button-div:hover {
+                    background-color: rgba(0, 0, 0, 0.04);
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 90%;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                position: static;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .side-bar-div-cross {
+        position: absolute;
+        top: 64px;
+        left: 81.8%;
+        padding: 1px 5px;
+        margin-top: 5px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 5px 1px rgba(97, 97, 97, 0.14), 0px 3px 14px 2px rgba(97, 97, 97, 0.12), 0px 5px 5px -3px rgba(97, 97, 97, 0.2);
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .checklist-right-grid-wrapper {
+        position: absolute;
+        top: 64px;
+        height: 100vh;
+        overflow-y: scroll;
+        padding: 16px;
+        width: 16.666667%;
+        padding-bottom: 50px;
+        background-color: white;
+        box-shadow: 0px 4px 5px 1px rgba(97, 97, 97, 0.14), 0px 3px 14px 2px rgba(97, 97, 97, 0.12), 0px 5px 5px -3px rgba(97, 97, 97, 0.2);
+
+        .sidemenu-menu-div {
+            width: 100%;
+            border: 1px solid #E4E4E4;
+            border-radius: 5px;
+            margin-bottom: 16px;
+            height: 36px;
+
+            .menu-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 0px;
+
+                .MuiSvgIcon-root {
+                    height: 0.80em;
+                    fill: rgba(33, 33, 33, 0.87);
+                }
+
+                cursor: pointer;
+
+                .menu-item-title {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.1px;
+                    color: rgba(33, 33, 33, 0.87);
+                    margin-left: 8px;
+                }
+            }
+
+            .menu-item:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+        }
+
+        .disabled-sidemenu-menu-div {
+            width: 100%;
+            border: 1px solid #E4E4E4;
+            border-radius: 5px;
+            margin-bottom: 16px;
+            height: 36px;
+            background-color: #E0E0E0;
+
+            .menu-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 0px;
+
+                .MuiSvgIcon-root {
+                    height: 0.80em;
+                    fill: rgba(33, 33, 33, 0.87);
+                }
+
+                cursor: no-drop;
+
+                .menu-item-title {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.1px;
+                    color: rgba(33, 33, 33, 0.87);
+                    margin-left: 8px;
+                }
+            }
+
+            .menu-item:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+        }
+
+        .sidemenu-people-div {
+            border-top: 1px solid #E4E4E4;
+            border-bottom: 1px solid #E4E4E4;
+
+            .heading {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                padding-top: 16px;
+            }
+
+            .sidemenu-assigne-div {
+                margin-top: 5px;
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+
+                .sidemenu-assigne-item {
+                    margin: 0px 16px 16px 0px;
+
+                    .MuiAvatar-root {
+                        width: 32px !important;
+                        height: 32px !important;
+                    }
+                }
+
+            }
+        }
+
+        .sidemenu-duedate-div {
+            border-bottom: 1px solid #E4E4E4;
+            padding-bottom: 16px;
+
+            .heading {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                padding: 16px 0px;
+            }
+
+            .MuiFormControl-root {
+                width: 100%;
+            }
+
+            .MuiFilledInput-input {
+                padding: 6px;
+            }
+
+            .duedate-error-input {
+                .makeStyles-root-1.Mui-focused {
+                    box-shadow: 0 0 0 1px #C62828 !important;
+                    border-color: #C62828 !important;
+                }
+
+                .MuiInputBase-root.MuiFilledInput-root {
+                    height: 48px;
+                    box-shadow: 0 0 0 1px #C62828 !important;
+                    border-color: #C62828 !important;
+                }
+
+                .css-ckoska-MuiFormControl-root-MuiTextField-root {
+                    margin-bottom: 0px;
+
+                }
+            }
+
+            .duedate-noterror-input {
+                .MuiInputBase-root.MuiFilledInput-root {
+                    height: 48px;
+                }
+            }
+
+            .duedate-error {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 0.4px;
+                color: #C62828;
+                display: flex;
+                justify-content: center;
+                margin-top: 6px;
+            }
+        }
+
+        .sidemenu-sharelink-div {
+            border-bottom: 1px solid #E4E4E4;
+            padding-bottom: 33px;
+
+            .share-link-wrapper {
+                padding-top: 13px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .heading {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+
+            }
+
+            .MuiFilledInput-input {
+                padding: 6px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            background: white;
+            max-width: 150px;
+            width: 230px;
+            max-width: 300px;
+        }
+    }
+
+    .side-bar-div {
+        padding: 8px 12px;
+        margin-top: 4px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 5px 1px rgba(97, 97, 97, 0.14), 0px 3px 14px 2px rgba(97, 97, 97, 0.12), 0px 5px 5px -3px rgba(97, 97, 97, 0.2);
+        border-radius: 8px 0px 0px 8px;
+        pointer-events: auto;
+        z-index: 1;
+
+        .content-wrap-flex-div {
+            display: flex;
+
+            h6 {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                padding-left: 6px;
+            }
+        }
+    }
+
+    .side-bar-left-div {
+        position: absolute;
+        left: 0px;
+        padding: 8px 12px;
+        margin-top: 4px;
+        background: #FFFFFF;
+        z-index: 1;
+        box-shadow: 0px 4px 5px 1px rgba(97, 97, 97, 0.14), 0px 3px 14px 2px rgba(97, 97, 97, 0.12), 0px 5px 5px -3px rgba(97, 97, 97, 0.2);
+        border-radius: 0px 8px 8px 0px;
+        cursor: pointer;
+        pointer-events: auto;
+
+        .content-wrap-flex-div {
+            display: flex;
+
+            h6 {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                padding-left: 6px;
+            }
+        }
+    }
+
+    .loader-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .multiselect-container {
+        .searchWrapper {
+            min-height: 48px;
+            padding: 10px;
+
+            .chip {
+                background-color: white;
+                color: rgba(33, 33, 33, 0.87);
+                border: 1px solid #E4E4E4;
+                border-radius: 16px;
+                padding: 6px 8px 6px 12px;
+                gap: 8px;
+            }
+
+            .closeIcon {
+                filter: invert(57%) sepia(91%) saturate(0%) hue-rotate(123deg) brightness(92%) contrast(92%);
+                // color: white;
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        .searchWrapper:hover {
+            border: 2px solid #00CFA1;
+        }
+
+        .optionContainer li:hover,
+        .optionContainer .highlight {
+            background: #00CFA1;
+            color: #fff;
+        }
+
+        ::placeholder {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: rgba(33, 33, 33, 0.38);
+        }
+    }
+
+    .form-date-div {
+        display: flex;
+        align-items: center;
+        padding: 4px 12px;
+        gap: 8px;
+        max-width: 268px;
+        min-height: 48px;
+        height: fit-content;
+        background: #FFFFFF;
+        border: 1px solid rgba(33, 33, 33, 0.38);
+        border-radius: 8px;
+
+        p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.4px;
+            color: rgba(33, 33, 33, 0.6);
+        }
+
+        h6 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: rgba(33, 33, 33, 0.87);
+        }
+    }
+
+    .form-date-div:focus {
+        border: 2px solid #00CFA1;
+
+        p {
+            color: #00CFA1;
+        }
+    }
+}
+
+.sidebar-duedate-popup-wrapper {
+    width: 267px !important;
+
+    .css-ckoska-MuiFormControl-root-MuiTextField-root {
+        margin-bottom: 0px;
+    }
+
+    .duedate-inputs-wrapper {
+        padding: 15px 15px 0px 15px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+
+        .MuiFormLabel-root {
+            color: #616161;
+            font-size: 18px;
+        }
+
+        .time-select-div {
+            .css-1oqbb8t {
+                font-size: 15px;
+            }
+
+            .css-q8hpuo-MuiFormControl-root {
+                margin-bottom: 0px;
+            }
+        }
+
+        // .MuiFormControl-root{
+        //     width: 100%;
+        // }
+        // .MuiFilledInput-input{
+        // }
+    }
+
+    .rdrCalendarWrapper {
+        font-size: 10px !important;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #E4E4E4;
+        border-bottom: 1px solid #E4E4E4;
+    }
+
+    .dueDatebtndiv {
+        text-align: right;
+        margin-right: 10px;
+        margin: 15px 0px;
+
+        .durdate-save-btn {
+            margin: 0px 15px 0px 25px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100% !important;
+
+        .rdrMonth {
+            width: 100% !important;
+        }
+
+    }
+}
+
+.override-duedate-wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 10px 1px rgba(97, 97, 97, 0.14), 0px 3px 14px 2px rgba(97, 97, 97, 0.12), 0px 5px 5px -3px rgba(97, 97, 97, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    width: 320px;
+
+    .calendar-icon-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(33, 33, 33, 0.87);
+        margin: 10px 0px;
+    }
+
+    h6 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.85rem;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        color: rgba(33, 33, 33, 0.6);
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.mention-popup-wrapper {
+    width: max-content;
+
+    .mention-item-div {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+
+        .name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+            color: rgba(33, 33, 33, 0.87);
+            display: block;
+            margin: 0px 12px;
+        }
+
+        .email {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.25px;
+            color: rgba(33, 33, 33, 0.6);
+            display: block;
+        }
+
+        .MuiAvatar-root {
+            width: 28px !important;
+            height: 28px !important;
+        }
+    }
+
+    .mention-item-div:hover {
+        background-color: rgba(0, 207, 161, 0.12);
+    }
+}
+
+.task-listing-avatargroup {
+    .MuiAvatar-colorDefault {
+        height: 28px;
+        width: 28px;
+        font-size: 11px;
+        background-color: #00CFA1;
+    }
+}
+
+.filter-wrapper {
+    background: #FFFFFF;
+    padding: 28px 0px;
+    box-shadow: 0px 8px 10px 1px rgba(97, 97, 97, 0.14), 0px 3px 14px 2px rgba(97, 97, 97, 0.12), 0px 5px 5px -3px rgba(97, 97, 97, 0.2);
+    border-radius: 24px 24px 0px 0px;
+    height: 90vh;
+    overflow-y: scroll;
+
+    .heading {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.15px;
+        color: rgba(33, 33, 33, 0.87);
+        text-align: center;
+    }
+
+    .btn-txt {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #00CFA1;
+    }
+}
+
+.assignee-inner-div {
+    display: flex;
+    align-items: center;
+    padding: 0px 6px 16px 6px;
+
+    .MuiAvatar-root {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .assignee-nameEmail-div {
+        padding-left: 16px;
+
+        .name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+            color: rgba(33, 33, 33, 0.87);
+            display: block;
+        }
+
+        .email {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: 0.25px;
+            color: rgba(33, 33, 33, 0.6);
+            display: block;
+            word-break: break-all;
+        }
+    }
+
+    .MuiSvgIcon-root {
+        fill: rgba(33, 33, 33, 0.6);
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+}
+
+.checklist-right-grid-wrapper {
+    position: absolute;
+    top: 64px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 16px;
+    width: 16.666667%;
+    padding-bottom: 50px;
+    background-color: white;
+    box-shadow: 0px 4px 5px 1px rgba(97, 97, 97, 0.14), 0px 3px 14px 2px rgba(97, 97, 97, 0.12), 0px 5px 5px -3px rgba(97, 97, 97, 0.2);
+
+    .sidemenu-menu-div {
+        width: 100%;
+        border: 1px solid #E4E4E4;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        height: 36px;
+
+        .menu-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 0px;
+
+            .MuiSvgIcon-root {
+                height: 0.80em;
+                fill: rgba(33, 33, 33, 0.87);
+            }
+
+            cursor: pointer;
+
+            .menu-item-title {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                margin-left: 8px;
+            }
+        }
+
+        .menu-item:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+    }
+
+    .disabled-sidemenu-menu-div {
+        width: 100%;
+        border: 1px solid #E4E4E4;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        height: 36px;
+        background-color: #E0E0E0;
+
+        .menu-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 0px;
+
+            .MuiSvgIcon-root {
+                height: 0.80em;
+                fill: rgba(33, 33, 33, 0.87);
+            }
+
+            cursor: no-drop;
+
+            .menu-item-title {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                letter-spacing: 0.1px;
+                color: rgba(33, 33, 33, 0.87);
+                margin-left: 8px;
+            }
+        }
+
+        .menu-item:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+    }
+
+    .sidemenu-people-div {
+        border-top: 1px solid #E4E4E4;
+        border-bottom: 1px solid #E4E4E4;
+
+        .heading {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: rgba(33, 33, 33, 0.87);
+            padding-top: 16px;
+        }
+
+        .sidemenu-assigne-div {
+            margin-top: 5px;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+
+            .sidemenu-assigne-item {
+                margin: 0px 16px 16px 0px;
+
+                .MuiAvatar-root {
+                    width: 32px !important;
+                    height: 32px !important;
+                }
+            }
+
+        }
+    }
+
+    .sidemenu-duedate-div {
+        border-bottom: 1px solid #E4E4E4;
+        padding-bottom: 16px;
+
+        .heading {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: rgba(33, 33, 33, 0.87);
+            padding: 16px 0px;
+        }
+
+        .MuiFormControl-root {
+            width: 100%;
+        }
+
+        .MuiFilledInput-input {
+            padding: 6px;
+        }
+
+        .duedate-error-input {
+            .makeStyles-root-1.Mui-focused {
+                box-shadow: 0 0 0 1px #C62828 !important;
+                border-color: #C62828 !important;
+            }
+
+            .MuiInputBase-root.MuiFilledInput-root {
+                height: 48px;
+                box-shadow: 0 0 0 1px #C62828 !important;
+                border-color: #C62828 !important;
+            }
+
+            .css-ckoska-MuiFormControl-root-MuiTextField-root {
+                margin-bottom: 0px;
+
+            }
+        }
+
+        .duedate-noterror-input {
+            .MuiInputBase-root.MuiFilledInput-root {
+                height: 48px;
+            }
+        }
+
+        .duedate-error {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.4px;
+            color: #C62828;
+            display: flex;
+            justify-content: center;
+            margin-top: 6px;
+        }
+    }
+
+    .sidemenu-sharelink-div {
+        border-bottom: 1px solid #E4E4E4;
+        padding-bottom: 33px;
+
+        .share-link-wrapper {
+            padding-top: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .heading {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: rgba(33, 33, 33, 0.87);
+
+        }
+
+        .MuiFilledInput-input {
+            padding: 6px;
+        }
+    }
+
+    .sidebar-items-wrapper {
+        @media screen and (max-width: 600px) {
+            overflow-y: scroll;
+            height: calc(100vh - 100px);
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        background: white;
+        min-width: 150px;
+        width: 220px;
+        overflow-y: unset;
+        max-width: 300px;
+        position: relative;
+        top: 72px;
+    }
+}

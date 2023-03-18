@@ -1,0 +1,147 @@
+@import "assests/sass/variables";
+
+.navbar-container {
+    @media (min-width: 584px) {
+        .container {
+            max-width: 100%;
+            padding: 0 1.5rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            max-width: 100%;
+
+        }
+    }
+
+    @media (min-width: 992px) {
+        .container {
+            max-width: 90% !important;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .container {
+            max-width: 90% !important;
+        }
+    }
+
+    z-index: 2;
+    opacity: 0.9;
+    min-height: 72px;
+    display: -ms-flexbox;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    color: rgba(33, 33, 33, 0.87);
+    border-bottom: 1px solid rgba(33, 33, 33, 0.12);
+}
+
+.mobile-list {
+    height: 100vh;
+    opacity: 0.9;
+    background: #ffffff;
+    color: rgba(33, 33, 33, 0.87);
+    border-bottom: 1px solid rgba(33, 33, 33, 0.12);
+
+    .mobile-list-wrapper {
+        margin-top: 2rem;
+    }
+}
+
+.main-navbar {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-side-nav {
+        .logo-wrapper img {
+            width: 150px;
+            height: auto;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .right-side-nav {
+        .client-nav-links {
+            display: flex;
+            align-items: center;
+
+
+
+
+
+            .demo-btn {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.mobile-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+
+    .activeLinkClass {
+        border-bottom: 5px solid $color-green !important;
+        color: $color-text-content !important;
+    }
+
+    .nav-mobile {
+        border-bottom: 5px solid transparent;
+        padding: 1.2rem 0;
+        padding-left: 1.5rem;
+        font-size: $_font-size-14;
+        line-height: 24px;
+        text-decoration: none;
+        font-weight: $font-weight-5;
+        // margin-right: $margin-16;
+        color: $color-text-title;
+        font-family: $font-secondary;
+        opacity: 0.87;
+        border-bottom: 5px solid transparent;
+
+        display: inline-block;
+        font-size: 14px;
+        line-height: 24px;
+        // margin: 1.4rem 1rem;
+
+        &:hover {
+            color: $color-grey;
+            border-bottom: 5px solid $color-green;
+            color: #23527c;
+            text-decoration: underline;
+            opacity: 0.8;
+            border-bottom: 5px solid $color-green !important;
+            color: $color-text-content !important;
+        }
+    }
+}
+
+.mobile-hamburger {
+    font-size: 18px;
+    margin-left: 4px;
+
+    &:hover {
+        color: grey;
+    }
+}
+
+.mobile-hamburger-cross {
+    font-size: 19px;
+    margin-right: 7px;
+    margin-top: 2.3px;
+
+
+    &:hover {
+        color: grey;
+    }
+}

@@ -1,0 +1,180 @@
+.cois-error-bar {
+    background-color: #FFF3E0 !important;
+    height: 53px;
+    border-radius: 6px;
+    border: 1px solid #FB8C00;
+
+    margin-top: 1.3rem;
+    margin-bottom: 6px;
+
+
+    .MuiToolbar-root {
+        padding-left: 12px;
+        padding-right: 8px;
+        padding-bottom: 9px
+    }
+
+    .MuiToolbar-root {
+        padding-bottom: 15px;
+    }
+
+    .icon-warning {
+        color: #f9a825;
+        font-size: 17.5px;
+    }
+
+    .details {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.1px;
+        color: rgba(33, 33, 33, 0.87);
+        padding-left: 10px;
+        padding-top: .2rem;
+    }
+
+    .learn-more {
+        font-family: Helvetica;
+        font-size: 14px;
+        color: rgba(33, 33, 33, 0.87);
+        border-radius: 6px;
+        border: 1px solid #FB8C00;
+        letter-spacing: .25px;
+        cursor: pointer;
+        margin-top: 1px;
+        padding: 5.5px 10px 6.5px;
+        background-color: white;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
+
+.cois-error-wrapper {
+    width: 100%;
+
+    .header {
+        font-family: 'Roboto-medium';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: .5px;
+        color: #000;
+        mix-blend-mode: normal;
+        opacity: .87;
+    }
+}
+
+.coi-warning-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 6rem !important;
+    padding-bottom: 5%;
+    width: 45%;
+
+    .heading-container {
+        .heading {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: #212121;
+            mix-blend-mode: normal;
+            opacity: 0.87;
+            padding-bottom: 25px;
+            padding-left: .5rem;
+        }
+
+        .back-icon {
+            font-size: 24px !important;
+            color: rgba(33, 33, 33, 0.6) !important;
+            cursor: pointer;
+        }
+    }
+
+
+    .certificates {
+
+        .card {
+            border: 1px solid #b3b0b030;
+            margin-bottom: 15px;
+            box-shadow: 0px 1px 1px rgba(97, 97, 97, 0.14), 0px 2px 1px -1px rgba(97, 97, 97, 0.12), 0px 1px 3px rgba(97, 97, 97, 0.2);
+            border-radius: 4px;
+
+            .title {
+                font-family: 'Roboto-medium';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+                color: black;
+                mix-blend-mode: normal;
+                opacity: 0.87;
+                padding: 16px;
+            }
+
+            .rows {
+
+                .warning-row {
+                    border-top: 1px solid #b3b0b030;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 7px 0px 7px 17px;
+
+                    .alert-sign {
+                        color: #C62828;
+                        font-size: 1.4rem;
+                    }
+
+                    .desc {
+                        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 24px;
+                        letter-spacing: 0.15px;
+                        color: #212121;
+                        mix-blend-mode: normal;
+                        opacity: 0.70;
+                        padding-left: 25px;
+                        padding-right: 25px;
+                    }
+                }
+            }
+
+            .bottom-line {
+                border-top: 1px solid #b3b0b030;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                p {
+                    font-size: 18px;
+                    color: #21212199;
+                    margin-left: 1rem;
+                }
+
+                .button {
+                    width: 96px;
+                    margin-left: 1.3rem;
+
+                    .MuiButton-root {
+                        height: 33px !important;
+                    }
+                }
+
+                .notify-message {
+                    padding-left: 14px;
+                }
+            }
+        }
+    }
+}

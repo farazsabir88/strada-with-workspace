@@ -1,0 +1,110 @@
+@import "assests/sass/variables";
+
+.homepage-header {
+  max-height: 600px;
+
+  .intro-content {
+    color: white;
+
+    .intro-slogan {
+      color: white;
+      margin-top: 130px;
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: $font-secondary;
+      line-height: 3.25rem;
+    }
+
+    .intro-desc {
+      font-family: $font-primary;
+      font-size: 1.125rem;
+      margin-bottom: 1.5rem;
+      line-height: 2rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .home-banner-img {
+    text-align: center;
+
+    img {
+      margin-top: 130px;
+      width: 533px;
+      height: 504px;
+    }
+  }
+}
+
+.header-bottom {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3E3E3E;
+  font-family: $font-Avenir;
+  margin-bottom: 1rem;
+  line-height: 3.25rem;
+}
+
+.col-video-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+
+  video {
+    width: 930px;
+    height: 566px;
+  }
+
+  .intro-brief {
+    text-align: center;
+    color: $color-green;
+    font-size: 1.2rem;
+    margin-top: .7rem;
+  }
+
+  .intro-slogan {
+    font-size: 2.125rem;
+    font-weight: bold;
+    font-family: "Avenir";
+    color: #3E3E3E;
+    margin-bottom: 4rem;
+    line-height: 3.25rem;
+    text-align: center;
+  }
+
+  .intro-slogan-2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Avenir";
+    color: #3E3E3E;
+    margin-bottom: 1rem;
+    line-height: 3.25rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .intro-desc {
+    font-family: $font-primary;
+    font-size: 1.125rem;
+    margin-bottom: auto;
+    line-height: 2rem;
+    color: rgba(33, 33, 33, 0.6);
+    text-align: center;
+    margin-right: 7rem;
+    margin-left: 7rem;
+  }
+}
+
+.header-bottom-home {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3E3E3E;
+  font-family: $font-Avenir;
+  margin-bottom: 8rem;
+  line-height: 3.25rem;
+}

@@ -1,0 +1,205 @@
+.cois-email-template {
+    margin-left: 10%;
+    margin-top: 6rem;
+    width: 34.5%;
+
+    .sub-header {
+        font-family: 'Roboto';
+        margin-bottom: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.5px;
+        color: #212121;
+        mix-blend-mode: normal;
+        opacity: 0.87;
+
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.4rem;
+
+        .back-icon {
+            font-size: 24px !important;
+            color: rgba(33, 33, 33, 0.6) !important;
+            cursor: pointer;
+        }
+
+        p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: #212121;
+            margin-left: .7rem;
+            mix-blend-mode: normal;
+            opacity: 0.87;
+        }
+    }
+
+    .text-area {
+        width: 100%;
+        border-radius: 7px;
+        border: 1px solid #dadad6;
+        overflow-y: scroll;
+        padding: 1rem;
+
+        &:focus {
+            border: 1px solid #00cfa1;
+
+        }
+
+        &:focus-visible {
+            border: 1px solid #00cfa1 !important;
+            outline: none;
+        }
+
+        &:active {
+            border: 1px solid #00cfa1;
+
+        }
+    }
+
+    .attachment-container {
+        display: flex;
+        align-items: center;
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+
+        i {
+            color: #00cfa1;
+            margin-left: .7rem;
+            font-size: 1.11rem;
+        }
+
+        p {
+            font-family: 'Roboto-medium';
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: .5px;
+            mix-blend-mode: normal;
+            padding-left: 1.1rem;
+            color: #00cfa1;
+            cursor: pointer;
+        }
+    }
+
+    .file-listing {
+        display: flex;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: .25px;
+            color: #212121;
+            mix-blend-mode: normal;
+            opacity: .6;
+            cursor: pointer;
+            word-break: break-all;
+            padding-right: 2rem;
+        }
+
+        .delete-icon {
+            color: #7A7A7A;
+            cursor: pointer
+        }
+
+    }
+}
+
+
+.pdf-dialog-send-notice {
+    .rpv-core__inner-page {
+        display: flex;
+        justify-content: center;
+        background-color: transparent !important;
+        margin-bottom: 4rem;
+    }
+
+    .rpv-core__inner-pages {
+        margin-bottom: 5rem !important;
+    }
+
+
+    .zoom-btn-out {
+        position: fixed;
+        z-index: 333;
+        bottom: 0;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        border-radius: 7px;
+        padding: .4rem .7rem .6rem;
+        color: white;
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+        height: 40px;
+        left: 47%;
+    }
+
+    .zoom-btn-in {
+        position: fixed;
+        height: 40px;
+        z-index: 333;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        border-radius: 7px;
+        color: white;
+        font-size: 18px;
+        padding: .4rem .6rem .6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .zoom-container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+    }
+
+
+
+
+    .MuiPaper-root {
+        background-color: rgba(0, 0, 0, .60) !important;
+        margin-top: 96px;
+    }
+
+    .pdf-container {
+
+        @media (max-width: 1100px) {}
+
+        .close-btn {
+            left: 0;
+            top: 0;
+            position: fixed;
+            padding-bottom: 16px;
+            display: flex;
+            z-index: 222222;
+            background-color: rgba(0, 0, 0, 0.6) !important;
+            width: 100%;
+            padding-left: 16px;
+            padding-top: 8px;
+
+            @media screen and (max-width: 992px) {
+                padding-bottom: 19px;
+            }
+        }
+
+        p {
+            color: #E5E5E5;
+            padding-left: .6rem;
+        }
+    }
+}

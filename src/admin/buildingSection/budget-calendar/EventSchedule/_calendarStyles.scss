@@ -1,0 +1,172 @@
+@import 'assests/sass/variables';
+
+
+// custom calendar
+
+.event-table-wrapper {
+    min-width: 760px;
+    overflow-x: scroll;
+}
+
+.custom-calendar {
+    margin-bottom: 40px;
+
+    .custom-calendar-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding-bottom: 12px;
+
+        .left-side {
+            color: #464646;
+            font-size: 20px;
+            font-family: $font-primary;
+        }
+
+        .right-side {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .show-button {
+        text-align: center;
+        margin: 25px 0;
+
+        h6 {
+            font-size: 16px;
+            color: rgb(0, 207, 161);
+            cursor: pointer;
+        }
+    }
+}
+
+.event-custom-calendar {
+    .header-cell-wrapper {
+
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        padding: 0px;
+    }
+
+    .first-header {
+        border-left: 1px solid #ddd;
+    }
+
+    .header-cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 56px;
+        min-width: 126px;
+
+        span {
+            background-color: white;
+            font-family: $font-secondary;
+            color: rgb(160, 160, 160);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+    .body-cell-wrapper {
+        border-right: 1px solid #ddd;
+        padding: 0;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(0, 207, 161, .12);
+
+        }
+    }
+
+    .first-body-cell {
+        border-left: 1px solid #ddd;
+    }
+
+    .body-cell {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 126px;
+        min-height: 104px;
+
+        .date-block {
+            padding: 12px;
+            font-size: 14px;
+            font-family: $font-primary;
+        }
+
+        .date-disable {
+            color: #e7e4e4;
+        }
+
+        .events-block {
+            margin-bottom: 10px;
+
+            p {
+                color: rgb(160, 160, 160);
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.date-range-for-calendar {
+    .calendar-control-button {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding: 10px;
+    }
+}
+
+.single-time-interval {
+    display: flex;
+
+    .time-range-picker {
+        flex: 1;
+
+        select {
+            background-color: white !important;
+            padding: 10px 15px !important;
+        }
+
+        .error {
+            font-size: 12px !important;
+            padding-top: 6px !important;
+            padding-left: 9px !important;
+        }
+
+        #start-component {
+            &:after {
+                content: "-";
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+.intervalDialogPaper {
+    width: 360px;
+}
+
+.add-intervalButton {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+    p {
+        font-size: 16px;
+        color: rgb(0, 207, 161);
+        margin-left: 3px;
+    }
+}
+
+
+
+// body-cell-wrapper first-body-cell

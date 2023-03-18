@@ -1,0 +1,110 @@
+@import "assests/sass/variables";
+
+.card-wrapper {
+    .card-heading {
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        color: rgba(33, 33, 33, 0.87);
+        letter-spacing: 0.5px;
+        font-family: $font-secondary;
+    }
+
+    .card-sub-heading {
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+        line-height: 1.25rem;
+        letter-spacing: 0.1px;
+        color: rgba(33, 33, 33, 0.87);
+        font-family: $font-secondary;
+        margin-top: 0.9rem;
+    }
+
+    .address-parts {
+        font-size: 0.875rem;
+        line-height: 1.3rem;
+        letter-spacing: 0.25px;
+        font-weight: normal;
+        color: rgba(33, 33, 33, 0.87);
+        font-family: $font-primary;
+    }
+
+    .card-desc {
+        font-size: 0.875rem;
+        line-height: 1.3rem;
+        letter-spacing: 0.25px;
+        font-weight: normal;
+        color: rgba(33, 33, 33, 0.87);
+        font-family: $font-primary;
+        margin-top: 0;
+    }
+
+    .avatar-wrapper {
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        width: max-content;
+
+        .MuiAvatar-circular {
+            font-size: $_font-size-14;
+        }
+
+        .avatar {
+            font-size: $_font-size-14;
+        }
+    }
+}
+
+.single-building-popover-btn {
+    padding: 12px 16px;
+    font-size: 14px !important;
+    line-height: 24px;
+    justify-content: flex-end;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+}
+
+.search-field-wrapper {
+    .search-field-typo {
+        font-family: 'Roboto-Medium';
+        font-size: 24px;
+        line-height: 36px;
+        color: rgba(33, 33, 33, 0.87);
+        letter-spacing: 0.5px;
+        font-weight: 550;
+    }
+
+    .search-field {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        flex-wrap: wrap;
+
+        .search-paper {
+            width: 229px;
+            height: 35px;
+            border: 2px solid $color-grey-light;
+            padding-left: 8px;
+            padding-top: 0px;
+
+            &:hover {
+                border: 2px solid $color-green;
+            }
+
+            &:focus {
+                border: 2px solid $color-green;
+            }
+
+            .search-icon {
+                color: $color-grey;
+                margin-left: 20px;
+                margin-bottom: 1px;
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+@import 'assests/sass/variables';
+
+.unpaid-charges-wrapper {
+    width: 100%;
+    margin: 1.5rem;
+    margin-right: 3rem;
+    margin-top: 92px;
+
+    .unpaid-charges-header {
+        width: 100%;
+        justify-content: space-between;
+
+        h6 {
+            font-size: 20px;
+            color: #000;
+            font-family: $font-primary;
+        }
+
+        display: flex;
+
+        .right-side {
+            display: flex;
+            align-items: center;
+
+            .button-wrapper {
+                width: 175px;
+            }
+
+            .search-wrapper {
+                width: 239px;
+                height: 36px;
+                margin-right: 25px;
+            }
+        }
+    }
+
+    .no-unpaid-charges {
+        height: auto;
+        margin: auto;
+        width: fit-content;
+        margin-top: 12rem;
+    }
+}
+
+.cid-contant-wrapper {
+    .sub-heading {
+        color: #12161B;
+        font-size: $_font-size-18;
+        margin-top: $margin-20;
+        margin-bottom: $margin-12;
+        font-family: $font-primary;
+    }
+
+    .cid-options-wrapper {
+        .cid-option {
+            display: flex;
+            align-items: center;
+        }
+
+        .cid-option p {
+            font-size: $_font-size-16;
+            font-family: $font-primary;
+            font-weight: $font-weight-4;
+            line-height: $_line-spacing-18;
+            letter-spacing: 0.00938em;
+            margin-left: 6px;
+        }
+    }
+}
+
+.dynamic-header {
+    .table-header-name {
+        font-size: 14px !important;
+        font-family: $font-secondary !important;
+    }
+
+    .header-icon {
+        font-size: 14px !important;
+        font-family: $font-secondary !important;
+        color: $color-green;
+
+        .email-icon {
+            font-size: 17px;
+            margin-right: 3px;
+            margin-bottom: 2px;
+
+        }
+
+        .delete-icon {
+            font-size: 18px;
+            margin-right: 2px;
+            margin-bottom: 2px;
+
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+@import "assests/sass/variables";
+
+.login-container {
+    padding-top: 2rem;
+    height: 75vh;
+    margin-top: 82px;
+
+    .login-content h1 {
+        font-size: $_font-size-48;
+        color: rgba(33, 33, 33, 0.87);
+        line-height: 64px;
+        margin-bottom: 2rem;
+        font-family: $font-Avenir;
+        color: #3E3E3E;
+        font-weight: $font-weight-7;
+    }
+
+    // .login-content form{
+    //     width: 25%;
+    //     margin: 0 auto;
+    // }
+    .login-content .login-link-area {
+        margin-top: $margin-38;
+    }
+}
+
+.forget-button {
+    font-size: $_font-size-14;
+    line-height: 32px;
+    text-align: center;
+    color: $color-green;
+    text-decoration: none;
+    font-family: $font-secondary;
+
+    &:hover {
+        text-decoration: underline;
+        color: $color-green;
+    }
+}

@@ -1,0 +1,143 @@
+@import 'assests/sass/variables';
+
+.bc-table-container {
+    width: calc(100% - 25px);
+    overflow: scroll;
+    position: relative;
+    margin-top: 10px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.bc-header-cell {
+    height: 55px !important;
+    background-color: white;
+    padding: 0 !important;
+    min-width: 150px;
+
+    .header-content {
+        height: 55px !important;
+        line-height: $_font-size-14 !important;
+        font-family: $font-secondary !important;
+        font-weight: $font-weight-5 !important;
+        color: #12161B !important;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        padding-left: 16px !important;
+        transition: ease all 0.4s;
+
+        .sort-icon {
+            display: none;
+        }
+
+    }
+
+    &:hover .header-content {
+        color: #66788A !important;
+
+        .sort-icon {
+            display: block;
+        }
+    }
+}
+
+.bc-header-cell-first {
+    height: 55px !important;
+    background-color: white;
+    padding: 0 !important;
+    position: sticky;
+    left: 0;
+    min-width: 324px;
+
+    .header-content {
+        height: 55px !important;
+        line-height: $_font-size-14 !important;
+        font-family: $font-secondary !important;
+        font-weight: $font-weight-5 !important;
+        color: #12161B !important;
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        padding-left: 16px !important;
+    }
+}
+
+.bc-body-cell {
+    font-family: $font-primary !important;
+    font-size: $_font-size-14 !important;
+    line-height: $_line-spacing-20 !important;
+    letter-spacing: 0.25px !important;
+    color: #12161B !important;
+    height: 50px !important;
+    padding: 0 !important;
+    padding-left: 14px !important;
+    border-right: 1px solid #ddd;
+
+}
+
+.bc-table-body-row {
+    cursor: pointer;
+
+
+
+    &:hover {
+        background-color: $color-hover-gray;
+
+        .contact-icons i {
+            display: block;
+        }
+    }
+}
+
+.bc-table-body-row-status-completed {
+    cursor: pointer;
+
+    td {
+        color: #21212161 !important;
+    }
+
+    p {
+        color: #21212161 !important;
+    }
+
+    &:hover {
+        .contact-icons i {
+            display: block;
+        }
+    }
+}
+
+.bc-body-cell-first {
+
+    height: 50px !important;
+    padding: 0 !important;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+
+    .cell-content {
+        font-family: $font-primary !important;
+        font-size: $_font-size-14 !important;
+        line-height: $_line-spacing-20 !important;
+        letter-spacing: 0.25px !important;
+        color: $color-text-title !important;
+        height: 50px !important;
+        border-right: 1px solid #ddd;
+        padding-left: 16px !important;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.bc-body-cell-first-status-completed {
+    .cell-content {
+        color: #21212161 !important;
+    }
+}

@@ -1,0 +1,96 @@
+@import 'assests/sass/variables';
+
+.privacy-content{
+    margin-top: 2rem;
+    display: flex;
+    .heading-table{
+      top: 120px;
+      position: sticky;
+      height: min-content;
+      width: 100%;
+      font-family:  $font-primary;
+      border-left: 3px solid rgb(240, 239, 239);
+      margin-top: 1rem;
+      color: #616161;
+ 
+      .heading-inner-table-box {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-left: -3px;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+    .privacy-policy-heading {
+        font-family: $font-primary;
+        font-size: $_font-size-48;
+        line-height:4rem;
+        font-weight: bold;
+        color: #212121;
+        padding-left: 10px;
+      }
+      .privacy-policy-sub-heading {
+        font-family: $font-primary;
+        font-size: $_font-size-24;
+        line-height: 2rem;
+        font-weight: bold;
+        color: #212121;
+        margin-top: 2rem;
+        padding-left: 10px;
+      }
+      .privacy-policy-paragraph {
+        font-family: $font-primary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.8rem;
+        color: #616161;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 2rem 0px;
+        text-align: justify;
+        text-justify: inter-word;
+        padding-left: 10px;
+      }
+      .privacy-policy-paragraph-no-space {
+        font-family: $font-primary;
+        font-style: normal;
+        line-height: 2rem;
+        font-weight: normal;
+        font-size: 1rem;
+        padding-left: 10px;
+        color: #616161;
+        flex: none;
+        order: 0;
+        margin: 0 !important;
+        flex-grow: 0;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+      .privacy-policy-email-link {
+        color: #00cfa1;
+      }
+      a p, p{
+        padding-left: 10px;
+        cursor: pointer;
+      }
+      
+}
+.active{
+  text-decoration: none;
+  p {
+    background-color: $color-green-light;
+    border-left: 3px solid $color-green;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color:white;
+    color: $color-green;
+    transition: 300ms;
+  }
+}
+
+
